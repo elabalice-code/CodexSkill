@@ -1,0 +1,4 @@
+interface:
+  display_name: "AIThinking-Trace"
+  short_description: "通过四领域分析与双焦点追踪定位问题，并输出可编辑的调查流程图"
+  default_prompt: "使用 $aithinking-trace 分析当前目标问题，梳理调查方向、证据与闭环动作，并交付可编辑的 drawio 流程图。"
