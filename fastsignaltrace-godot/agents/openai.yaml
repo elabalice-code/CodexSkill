@@ -1,0 +1,7 @@
+interface:
+  display_name: "FastSignalTrace Godot"
+  short_description: "Scan GDScript members and emit signal equations"
+  default_prompt: "Use $fastsignaltrace-godot to scan this Godot project and return validated signal equations."
+
+policy:
+  allow_implicit_invocation: false

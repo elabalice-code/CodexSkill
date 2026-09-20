@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260912T214525555-2b0ef5e6",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:/Users/HCKTest/Desktop/RemoteSupport/NetworkCorner-20260912-2141.ps1 -Mode Launch -SessionId 2 -OutputBase C:/Users/HCKTest/Desktop/RemoteSupport/network-corner-20260912-2145",
+                      "--device",
+                      "MB06_Mini_6490",
+                      "--timeout",
+                      "90",
+                      "--no-filecmd",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-12T21:45:25.5662091+08:00"
+}

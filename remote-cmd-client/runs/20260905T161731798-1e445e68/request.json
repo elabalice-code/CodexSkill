@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T161731798-1e445e68",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "cmd /c dir /s /b C:\\Users\\song\\Downloads\\*.csv",
+                      "--no-filecmd",
+                      "--device",
+                      "Kenai8270_1",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T16:17:31.8091384+08:00"
+}

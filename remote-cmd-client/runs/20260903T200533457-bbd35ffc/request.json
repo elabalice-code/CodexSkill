@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260903T200533457-bbd35ffc",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "C:\\Progra~2\\Microsoft\\Edge\\Application\\msedge.exe --headless=new --disable-gpu --no-first-run --user-data-dir=C:\\Assets\\Speedometer31-profile --window-size=1280,1024 --screenshot=C:\\Assets\\Speedometer31-page.png https://browserbench.org/Speedometer3.1/",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "180",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-03T20:05:33.4707136+08:00"
+}

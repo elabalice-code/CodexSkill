@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T100133593-fd27ec52",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "=\u0027C:\\Assets\\Geekbench-6.5.0-WindowsSetup.exe\u0027; =Get-Item -LiteralPath ; =Get-FileHash -LiteralPath  -Algorithm SHA256; =Get-AuthenticodeSignature -LiteralPath ; [pscustomobject]@{FullName=.FullName;Length=.Length;SHA256=.Hash;SignatureStatus=.Status.ToString();Signer=if(.SignerCertificate){.SignerCertificate.Subject}else{}} | ConvertTo-Json -Compress",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "600",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T10:01:33.6067706+08:00"
+}

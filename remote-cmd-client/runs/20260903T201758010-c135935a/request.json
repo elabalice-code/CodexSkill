@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260903T201758010-c135935a",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "upload",
+                      "C:\\Users\\PC\\Downloads\\OfficeSetup.exe",
+                      "C:\\Users\\Song\\Downloads\\RemoteSupport\\WindowsBenchWorkplace\\tool-downloads\\downloads\\OfficeSetup.exe",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-03T20:17:58.0214184+08:00"
+}

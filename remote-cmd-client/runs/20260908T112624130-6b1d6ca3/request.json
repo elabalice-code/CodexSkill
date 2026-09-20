@@ -1,0 +1,14 @@
+﻿{
+    "run_id":  "20260908T112624130-6b1d6ca3",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Get-Process -Name geekbench*,cinebench*,diskspd*,msedge*,chrome*,3dmark*,procyon* -ErrorAction SilentlyContinue | Select-Object ProcessName,Id,SessionId | Format-Table -AutoSize",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  5,
+    "max_retries":  3,
+    "started_at":  "2026-09-08T11:26:24.1427513+08:00"
+}

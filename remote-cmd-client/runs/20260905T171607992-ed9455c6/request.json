@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T171607992-ed9455c6",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "tree C:\\Assets\\GeekbenchResults /F",
+                      "--no-filecmd",
+                      "--device",
+                      "Kenai8270_1",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T17:16:08.0032262+08:00"
+}

@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T191702619-19f125ec",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\\Assets\\Get-UfsSystemDiskDetails-20260905.ps1",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "90",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T19:17:02.6298672+08:00"
+}

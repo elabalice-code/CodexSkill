@@ -1,0 +1,16 @@
+﻿{
+    "run_id":  "20260905T193156153-bdec69f8",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powershell -NoProfile -ExecutionPolicy Bypass -File C:\\Assets\\KenaiBenchmark\\Run-KenaiCinebenchCertificateInstallInteractive-20260905.ps1 -InstallerPath C:\\Assets\\KenaiBenchmark\\Install-KenaiCinebenchIntermediateAsUser-20260905.ps1 -CertificatePath C:\\Assets\\KenaiBenchmark\\DigiCert-Trusted-G4-CodeSigning-2021-CA1-7B0F360B-20260905.cer -OutputPath C:\\Users\\song\\Documents\\Kenai-Cinebench-Cert-Install-20260905T1932CST.json -TaskName Codex-Kenai-Cinebench-Cert-20260905T1932CST",
+                      "--device",
+                      "Kenai8270_1",
+                      "--timeout",
+                      "150",
+                      "--json"
+                  ],
+    "argument_count":  7,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T19:31:56.1645550+08:00"
+}

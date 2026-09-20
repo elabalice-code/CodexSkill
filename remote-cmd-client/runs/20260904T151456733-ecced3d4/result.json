@@ -1,0 +1,23 @@
+﻿{
+    "run_id":  "20260904T151456733-ecced3d4",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "completed_at":  "2026-09-04T15:15:33.7455154+08:00",
+    "status":  "completed",
+    "exit_code":  0,
+    "attempt_count":  1,
+    "retries_performed":  0,
+    "max_retries":  3,
+    "stopped_reason":  "success",
+    "attempts":  [
+                     {
+                         "attempt":  1,
+                         "started_at":  "2026-09-04T15:14:56.7957765+08:00",
+                         "completed_at":  "2026-09-04T15:15:33.7389961+08:00",
+                         "exit_code":  0,
+                         "retryable_pre_execution_failure":  false,
+                         "will_retry":  false,
+                         "stdout_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\runs\\20260904T151456733-ecced3d4\\attempt-01.stdout.txt",
+                         "stderr_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\runs\\20260904T151456733-ecced3d4\\attempt-01.stderr.txt"
+                     }
+                 ]
+}

@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T103543556-60669e5c",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "\u0026 \u0027C:\\Assets\\Geekbench-6.5.0\\geekbench6.exe\u0027 --help",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T10:35:43.5688944+08:00"
+}

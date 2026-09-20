@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T171207974-7fce2a83",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Start-Process -FilePath powershell.exe -ArgumentList \u0027-NoProfile -ExecutionPolicy Bypass -File C:\\Assets\\Run-Geekbench6-CpuFive.ps1 -GeekbenchPath C:\\Assets\\Geekbench-6.5.0\\geekbench6.exe -ResultsRoot C:\\Assets\\GeekbenchResults -RunCount 5\u0027; \u0027QCS_RUNNER_STARTED\u0027",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T17:12:07.9855951+08:00"
+}

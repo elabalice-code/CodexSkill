@@ -1,0 +1,16 @@
+﻿{
+    "run_id":  "20260905T153511318-25a43d1a",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Get-ChildItem -LiteralPath C:\\Assets\\KenaiBenchmark\\scripts -Force | Select-Object Mode,Name,FullName; Get-ChildItem -LiteralPath C:\\Assets\\KenaiBenchmark\\scripts -Directory -Recurse | Select-Object FullName",
+                      "--device",
+                      "Kenai8270_1",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  7,
+    "max_retries":  0,
+    "started_at":  "2026-09-05T15:35:11.3335751+08:00"
+}

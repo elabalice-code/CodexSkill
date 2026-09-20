@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260903T185719507-1aaf17b0",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powershell -NoProfile -ExecutionPolicy Bypass -File C:\\Users\\Song\\Downloads\\RemoteSupport\\WindowsBenchWorkplace\\Collect-ToolInventoryV2.ps1",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-03T18:57:19.5164067+08:00"
+}

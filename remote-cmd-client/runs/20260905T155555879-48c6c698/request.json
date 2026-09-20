@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T155555879-48c6c698",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "\u0026 C:\\Assets\\DiskSpd-v2.2\\arm64\\diskspd.exe -c64M -d15 -W2 -C2 -b4K -r -o1 -t1 -Sh -w0 -L C:\\Assets\\KenaiBenchmarkResults\\diskspd-64m-20260905T155550Z.dat",
+                      "--no-filecmd",
+                      "--device",
+                      "Kenai8270_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T15:55:55.8901097+08:00"
+}

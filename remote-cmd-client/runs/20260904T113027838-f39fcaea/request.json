@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T113027838-f39fcaea",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \u0027C:\\Assets\\AssetValidation\\AssetValidation-20260904T103354\\Invoke-Speedometer31Initial.ps1\u0027 -ResultDirectory \u0027C:\\Assets\\AssetValidation\\AssetValidation-20260904T103354\u0027 -Port 9333 -TimeoutSeconds 900",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "1080",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T11:30:27.8520907+08:00"
+}

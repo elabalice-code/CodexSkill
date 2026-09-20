@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T211205411-3da74783",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "upload",
+                      "D:\\Task_Panel\\6_6490_Dev\\Ex_Performances\\1_Grades\\1_Windows\\workspace\\1_AgentOutputs\\Capture-CinebenchWindowEvidence.ps1",
+                      "C:\\Assets\\Capture-CinebenchWindowEvidence-20260905T2120-v2.ps1",
+                      "--device",
+                      "Kenai8270_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T21:12:05.4223638+08:00"
+}

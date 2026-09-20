@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T193056919-d4c46d4d",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "upload",
+                      "D:\\Task_Panel\\6_6490_Dev\\Ex_Performances\\1_Grades\\1_Windows\\workspace\\1_AgentOutputs\\Install-KenaiCinebenchIntermediateAsUser.ps1",
+                      "C:\\Assets\\KenaiBenchmark\\Install-KenaiCinebenchIntermediateAsUser-20260905.ps1",
+                      "--device",
+                      "Kenai8270_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T19:30:56.9377314+08:00"
+}

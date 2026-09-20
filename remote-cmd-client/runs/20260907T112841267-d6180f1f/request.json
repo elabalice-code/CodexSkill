@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260907T112841267-d6180f1f",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "$d=Get-CimInstance -Namespace root/cimv2 -ClassName Win32_PerfFormattedData_Counters_ThermalZoneInformation; $d | ForEach-Object { $r=[double]$_.HighPrecisionTemperature; [pscustomobject]@{Name=$_.Name;Raw=$r;Celsius=$(if($r -ge 2000 -and $r -le 5000){[Math]::Round($r/10-273.15,2)}else{$null})} } | Sort-Object Name | ConvertTo-Json -Compress",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-07T11:28:41.2819007+08:00"
+}

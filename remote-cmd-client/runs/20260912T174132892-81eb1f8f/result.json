@@ -1,0 +1,43 @@
+﻿{
+    "run_id":  "20260912T174132892-81eb1f8f",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "completed_at":  "2026-09-12T17:48:31.4992680+08:00",
+    "status":  "completed",
+    "exit_code":  -1,
+    "attempt_count":  3,
+    "retries_performed":  2,
+    "max_retries":  3,
+    "stopped_reason":  "non_retryable_or_ambiguous_failure",
+    "attempts":  [
+                     {
+                         "attempt":  1,
+                         "started_at":  "2026-09-12T17:41:32.9651717+08:00",
+                         "completed_at":  "2026-09-12T17:43:35.0967479+08:00",
+                         "exit_code":  1,
+                         "retryable_pre_execution_failure":  true,
+                         "will_retry":  true,
+                         "stdout_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\runs\\20260912T174132892-81eb1f8f\\attempt-01.stdout.txt",
+                         "stderr_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\runs\\20260912T174132892-81eb1f8f\\attempt-01.stderr.txt"
+                     },
+                     {
+                         "attempt":  2,
+                         "started_at":  "2026-09-12T17:43:37.1208808+08:00",
+                         "completed_at":  "2026-09-12T17:46:03.1648518+08:00",
+                         "exit_code":  1,
+                         "retryable_pre_execution_failure":  true,
+                         "will_retry":  true,
+                         "stdout_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\runs\\20260912T174132892-81eb1f8f\\attempt-02.stdout.txt",
+                         "stderr_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\runs\\20260912T174132892-81eb1f8f\\attempt-02.stderr.txt"
+                     },
+                     {
+                         "attempt":  3,
+                         "started_at":  "2026-09-12T17:46:07.1733185+08:00",
+                         "completed_at":  "2026-09-12T17:48:31.4916996+08:00",
+                         "exit_code":  -1,
+                         "retryable_pre_execution_failure":  false,
+                         "will_retry":  false,
+                         "stdout_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\runs\\20260912T174132892-81eb1f8f\\attempt-03.stdout.txt",
+                         "stderr_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\runs\\20260912T174132892-81eb1f8f\\attempt-03.stderr.txt"
+                     }
+                 ]
+}

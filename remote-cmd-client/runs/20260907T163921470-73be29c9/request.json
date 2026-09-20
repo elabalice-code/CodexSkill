@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260907T163921470-73be29c9",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Get-ChildItem -LiteralPath C:\\Users\\Song\\Downloads -Filter speedometer-3-*.csv -File | Sort-Object LastWriteTime -Descending | Select-Object -First 5 FullName,Length,LastWriteTime,LastWriteTimeUtc | ConvertTo-Json -Compress",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-07T16:39:21.4876296+08:00"
+}

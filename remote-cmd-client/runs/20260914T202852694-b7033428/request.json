@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260914T202852694-b7033428",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "\u0026 C:\\Windows\\Sysnative\\pnputil.exe /?",
+                      "--no-filecmd",
+                      "--device",
+                      "HongheSleeper",
+                      "--timeout",
+                      "45",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-14T20:28:52.7121337+08:00"
+}

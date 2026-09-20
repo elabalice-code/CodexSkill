@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T104626823-28850388",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "if((Get-Process -Name \u0027geekbench*\u0027 -ErrorAction SilentlyContinue | Measure-Object).Count -ne 0){throw \u0027Geekbench process still running\u0027}; Expand-Archive -LiteralPath \u0027C:\\Assets\\Cinebench2026_win_arm64.zip\u0027 -DestinationPath \u0027C:\\Assets\\Cinebench2026\u0027 -ErrorAction Stop; [pscustomobject]@{ExeExists=(Test-Path -LiteralPath \u0027C:\\Assets\\Cinebench2026\\Cinebench.exe\u0027);ExeLength=(Get-Item -LiteralPath \u0027C:\\Assets\\Cinebench2026\\Cinebench.exe\u0027 -ErrorAction SilentlyContinue).Length;FileCount=(Get-ChildItem -LiteralPath \u0027C:\\Assets\\Cinebench2026\u0027 -Recurse -File | Measure-Object).Count} | ConvertTo-Json -Compress",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "1800",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T10:46:26.8376349+08:00"
+}

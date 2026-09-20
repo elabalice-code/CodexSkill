@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T161413447-08137ef6",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "download",
+                      "C:/Assets/AssetValidation/AssetValidation-20260904T103354/cinebench-song-cert-install-20260904T1612.json",
+                      "D:/Task_Panel/6_6490_Dev/Ex_Performances/1_Grades/1_Windows/workspace/999_Docs/TestManual/Cinebench2026_ARM64_20260904/cinebench-song-cert-install-20260904T1612.json",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "300",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T16:14:13.4610168+08:00"
+}

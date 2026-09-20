@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260903T203141261-4938796f",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "cmd.exe /c dir C:\\Assets\\Geekbench-6.5.0-WindowsSetup-CDP.exe.bitmap",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-03T20:31:41.2739233+08:00"
+}

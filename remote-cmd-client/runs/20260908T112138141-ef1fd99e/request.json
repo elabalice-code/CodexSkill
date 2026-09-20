@@ -1,0 +1,14 @@
+﻿{
+    "run_id":  "20260908T112138141-ef1fd99e",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powercfg /getactivescheme; powercfg /query SCHEME_CURRENT SUB_VIDEO VIDEOIDLE; powercfg /query SCHEME_CURRENT SUB_SLEEP STANDBYIDLE; powercfg /query SCHEME_CURRENT SUB_SLEEP HIBERNATEIDLE; powercfg /query SCHEME_CURRENT SUB_PROCESSOR PROCTHROTTLEMIN; powercfg /query SCHEME_CURRENT SUB_PROCESSOR PROCTHROTTLEMAX",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  5,
+    "max_retries":  3,
+    "started_at":  "2026-09-08T11:21:38.1581236+08:00"
+}

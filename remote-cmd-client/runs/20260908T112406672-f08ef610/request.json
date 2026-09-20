@@ -1,0 +1,14 @@
+﻿{
+    "run_id":  "20260908T112406672-f08ef610",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powercfg /query SCHEME_CURRENT SUB_PROCESSOR PROCTHROTTLEMIN",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  5,
+    "max_retries":  3,
+    "started_at":  "2026-09-08T11:24:06.6845689+08:00"
+}

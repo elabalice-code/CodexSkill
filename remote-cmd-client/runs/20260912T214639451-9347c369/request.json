@@ -1,0 +1,15 @@
+﻿{
+    "run_id":  "20260912T214639451-9347c369",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "download",
+                      "C:\\Users\\HCKTest\\Desktop\\RemoteSupport\\network-corner-20260912-2145.png",
+                      "D:\\Task_Panel\\0_ElabAlice\\0_FastTool\\9_FastScreenRecorder\\workspace\\diagnostics\\network-corner-20260912-2145.png",
+                      "--device",
+                      "MB06_Mini_6490",
+                      "--json"
+                  ],
+    "argument_count":  6,
+    "max_retries":  3,
+    "started_at":  "2026-09-12T21:46:39.4660218+08:00"
+}

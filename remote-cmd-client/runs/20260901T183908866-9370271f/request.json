@@ -1,0 +1,16 @@
+﻿{
+    "run_id":  "20260901T183908866-9370271f",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\\Users\\PC\\Desktop\\RemoteSupport\\Alice\\nas329-clean-baseline.ps1",
+                      "--device",
+                      "Samt_20260828_2220",
+                      "--timeout",
+                      "900",
+                      "--json"
+                  ],
+    "argument_count":  7,
+    "max_retries":  3,
+    "started_at":  "2026-09-01T18:39:08.8767758+08:00"
+}

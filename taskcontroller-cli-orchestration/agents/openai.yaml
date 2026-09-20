@@ -1,0 +1,7 @@
+interface:
+  display_name: "TaskController CLI Orchestration"
+  short_description: "Plan and maintain TaskControl task data"
+  default_prompt: "Use $taskcontroller-cli-orchestration to validate and plan this TaskControl data directory."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T161421461-3c128487",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Start-Process -FilePath explorer.exe -ArgumentList \u0027C:\\Users\\song\\Desktop\\RemoteSupport\\1_Assets\u0027; \u0027EXPLORER_OPEN_REQUESTED\u0027",
+                      "--no-filecmd",
+                      "--device",
+                      "Kenai8270_1",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T16:14:21.4704187+08:00"
+}

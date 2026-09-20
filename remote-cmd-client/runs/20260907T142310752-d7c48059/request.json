@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260907T142310752-d7c48059",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "download",
+                      "C:\\Assets\\Geekbench65-Thermal20s-Typeperf20s-20260907T1413\\thermal-trace.json",
+                      "D:\\Task_Panel\\6_6490_Dev\\Ex_Performances\\1_Grades\\1_Windows\\workspace\\1_AgentOutputs\\QCS6490_1-Geekbench65-Thermal20s-Typeperf20s-20260907T1413-thermal-trace.json",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "300",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-07T14:23:10.7778014+08:00"
+}

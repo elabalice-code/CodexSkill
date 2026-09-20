@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T151118868-47a1fab2",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "$ErrorActionPreference = \u0027Stop\u0027\n$log = \u0027C:\\Assets\\AssetValidation\\AssetValidation-20260904T103354\\cinebench-stdout.txt\u0027\n\u0027=== CINEBENCH_KEY_LINES ===\u0027\nSelect-String -LiteralPath $log -Pattern \u0027Application start\u0027,\u0027Version / Build\u0027,\u0027Processor\u0027,\u0027Binary Architecture\u0027,\u0027Command line arguments\u0027,\u0027CINEBENCH started\u0027,\u0027score\u0027,\u0027points\u0027,\u0027pts\u0027,\u0027result\u0027,\u0027Access is denied\u0027,\u00270x887a0022\u0027,\u0027gui_systemframe\u0027,\u0027application crashed\u0027 -SimpleMatch | ForEach-Object { $_.Line }\n\u0027=== CINEBENCH_LOG_TAIL ===\u0027\nGet-Content -LiteralPath $log -Tail 60\n\u0027=== RESULT_FILE_CANDIDATES ===\u0027\n$roots = @(\u0027C:\\Assets\\Cinebench2026\u0027,\u0027C:\\ProgramData\\Maxon\u0027,\u0027C:\\Windows\\System32\\config\\systemprofile\\AppData\\Roaming\\Maxon\u0027,\u0027C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Maxon\u0027)\nforeach ($root in $roots) {\n if (Test-Path -LiteralPath $root) {\n  Write-Output (\u0027ROOT=\u0027 + $root)\n  Get-ChildItem -LiteralPath $root -Recurse -File | Where-Object { $_.Name -match \u0027score|result|ranking|benchmark|console|log\u0027 -or $_.LastWriteTime -ge [datetime]\u00272026-09-04T11:20:00\u0027 } | Sort-Object LastWriteTime -Descending | Select-Object -First 50 Name,Length,LastWriteTime,FullName | Format-List\n }\n}",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "180",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T15:11:18.8811077+08:00"
+}

@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260902T160125924-3eb241d9",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Remove-Item -Path \"C:\\windows\\TEMP\\CodexWindowsToolValidation_20260902_1540\" -Recurse -Force",
+                      "--no-filecmd",
+                      "--device",
+                      "Doll_FZJ",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-02T16:01:25.9503493+08:00"
+}

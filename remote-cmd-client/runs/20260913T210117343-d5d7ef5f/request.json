@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260913T210117343-d5d7ef5f",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Get-Process -Id 10444 -ErrorAction SilentlyContinue | Select-Object Id,CPU,WorkingSet64,StartTime; Get-Content -LiteralPath C:/Users/HCKTest/Desktop/RemoteSupport/ScreenshotChanges-20260913-2058.stdout.log -Tail 5; Get-Content -LiteralPath C:/Users/HCKTest/Desktop/RemoteSupport/ScreenshotChanges-20260913-2058.stderr.log -Tail 8; Get-ChildItem -LiteralPath C:/Users/HCKTest/Desktop/RemoteSupport/ScreenshotChanges-20260913-2058 -ErrorAction SilentlyContinue | Select-Object Name,Length,LastWriteTime",
+                      "--device",
+                      "MB06_Mini_6490",
+                      "--timeout",
+                      "60",
+                      "--no-filecmd",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-13T21:01:17.3583795+08:00"
+}

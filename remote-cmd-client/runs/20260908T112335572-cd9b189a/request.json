@@ -1,0 +1,14 @@
+﻿{
+    "run_id":  "20260908T112335572-cd9b189a",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powercfg /query SCHEME_CURRENT SUB_VIDEO VIDEOIDLE",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  5,
+    "max_retries":  3,
+    "started_at":  "2026-09-08T11:23:35.5840497+08:00"
+}

@@ -1,0 +1,12 @@
+﻿{
+    "run_id":  "20260902T160313389-a2748fbf",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "config",
+                      "p2p",
+                      "true"
+                  ],
+    "argument_count":  3,
+    "max_retries":  3,
+    "started_at":  "2026-09-02T16:03:13.4005958+08:00"
+}

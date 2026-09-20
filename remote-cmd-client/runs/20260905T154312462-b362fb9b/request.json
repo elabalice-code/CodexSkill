@@ -1,0 +1,16 @@
+﻿{
+    "run_id":  "20260905T154312462-b362fb9b",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "type C:\\Assets\\KenaiBenchmark\\scripts\\Run-KenaiBenchmarks.ps1",
+                      "--device",
+                      "Kenai8270_1",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  7,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T15:43:12.4734798+08:00"
+}

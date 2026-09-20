@@ -1,0 +1,14 @@
+﻿{
+    "run_id":  "20260908T114425721-9bea0728",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Test-Path \"C:\\Users\\LCT\\Desktop\\RemoteSupport\\Workplace\\1_Assets\\1_Assets\\DiskSpd-v2.2-official\\arm64\\diskspd.exe\"",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  5,
+    "max_retries":  3,
+    "started_at":  "2026-09-08T11:44:25.7326069+08:00"
+}

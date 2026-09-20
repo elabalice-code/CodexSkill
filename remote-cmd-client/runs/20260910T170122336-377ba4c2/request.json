@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260910T170122336-377ba4c2",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Get-Content -LiteralPath \u0027C:\\Users\\Administrator\\Desktop\\00_STATUS\\Qwen3.8-27B_4090D_实测结果报告.md\u0027 -Raw -Encoding utf8",
+                      "--no-filecmd",
+                      "--device",
+                      "Nene",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-10T17:01:22.3483622+08:00"
+}

@@ -1,0 +1,16 @@
+﻿{
+    "run_id":  "20260914T201321849-1dfde048",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "cmd /c \"hostname \u0026 ver \u0026 wmic os get Caption,OSArchitecture,Version /value \u0026 wmic logicaldisk get DeviceID,VolumeName,DriveType\"",
+                      "--device",
+                      "HongheSleeper",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  7,
+    "max_retries":  3,
+    "started_at":  "2026-09-14T20:13:21.8610970+08:00"
+}

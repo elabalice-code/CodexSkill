@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T114845364-704f71d1",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "download",
+                      "C:\\Assets\\AssetValidation\\AssetValidation-20260904T103354\\environment.json",
+                      "D:\\Task_Panel\\6_6490_Dev\\Ex_Performances\\1_Grades\\1_Windows\\workspace\\999_Docs\\AssetValidation-20260904T103354\\environment.json",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "300",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T11:48:45.3804086+08:00"
+}

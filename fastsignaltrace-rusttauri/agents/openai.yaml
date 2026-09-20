@@ -1,0 +1,7 @@
+interface:
+  display_name: "FastSignalTrace Rust+Tauri"
+  short_description: "Scan Rust and Tauri state into signal equations"
+  default_prompt: "Use $fastsignaltrace-rusttauri to scan this Rust and Tauri project and return validated signal equations."
+
+policy:
+  allow_implicit_invocation: false

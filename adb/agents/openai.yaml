@@ -1,0 +1,4 @@
+interface:
+  display_name: "ADB Read-only Diagnostics"
+  short_description: "Safely inspect and monitor Android devices with bundled adb"
+  default_prompt: "Use $adb to inspect an Android device with read-only commands."

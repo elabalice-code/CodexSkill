@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260909T101004867-9b29f017",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Get-PnpDevice -Class Bluetooth",
+                      "--no-filecmd",
+                      "--device",
+                      "MB06_Mini_6490",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-09T10:10:04.8777764+08:00"
+}

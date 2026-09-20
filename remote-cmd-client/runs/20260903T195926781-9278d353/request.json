@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260903T195926781-9278d353",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "mkdir C:\\Assets\\DiskSpd-v2.2",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-03T19:59:26.7945271+08:00"
+}

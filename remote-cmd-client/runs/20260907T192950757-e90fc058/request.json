@@ -1,0 +1,16 @@
+﻿{
+    "run_id":  "20260907T192950757-e90fc058",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "cmd /c tree \"C:\\Users\\HCKTest\\Desktop\" /A",
+                      "--device",
+                      "MiniPC",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  7,
+    "max_retries":  3,
+    "started_at":  "2026-09-07T19:29:50.7702575+08:00"
+}

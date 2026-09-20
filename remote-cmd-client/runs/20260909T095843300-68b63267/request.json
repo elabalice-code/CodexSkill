@@ -1,0 +1,16 @@
+﻿{
+    "run_id":  "20260909T095843300-68b63267",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "pnputil /enum-devices /class Bluetooth",
+                      "--device",
+                      "MB06_Mini_6490",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  7,
+    "max_retries":  3,
+    "started_at":  "2026-09-09T09:58:43.3104567+08:00"
+}

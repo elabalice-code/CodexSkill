@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260912T180010272-e5962e4b",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "tasklist /v /fi \"IMAGENAME eq RemoteCmdServer.exe\"",
+                      "--device",
+                      "MB06_Mini_6490",
+                      "--timeout",
+                      "60",
+                      "--no-filecmd",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-12T18:00:10.2932804+08:00"
+}

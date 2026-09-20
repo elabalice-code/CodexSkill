@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T151327661-030dd9b7",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "$ErrorActionPreference = \u0027Continue\u0027\n\u0027TARGET_EXISTS=\u0027 + (Test-Path -LiteralPath \u0027C:\\Assets\\Cinebench2026\u0027)\n\u0027CURRENT_SESSION=\u0027 + (Get-Process -Id $PID).SessionId\n\u0027CURRENT_USER=\u0027 + [Security.Principal.WindowsIdentity]::GetCurrent().Name\n\u0027INTERACTIVE_SESSIONS:\u0027\n\u0026 query.exe user\n\u0027EXPLORER_PROCESSES:\u0027\nGet-Process -Name explorer -ErrorAction SilentlyContinue | Select-Object Id,SessionId,StartTime,Path | Format-Table -AutoSize",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T15:13:27.6742154+08:00"
+}

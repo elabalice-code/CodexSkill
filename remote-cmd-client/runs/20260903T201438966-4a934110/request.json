@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260903T201438966-4a934110",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "download",
+                      "C:\\Assets\\DiskSpd-v2.2-official.zip",
+                      "D:\\Task_Panel\\6_6490_Dev\\Ex_Performances\\1_Grades\\1_Windows\\workspace\\1_Assets\\DiskSpd-v2.2-official.zip",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "300",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-03T20:14:38.9809083+08:00"
+}

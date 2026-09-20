@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260903T195735987-3d2b9910",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "curl.exe -L --fail --remove-on-error --output C:\\Assets\\DiskSpd-v2.2-official.zip \u0027https://release-assets.githubusercontent.com/github-production-release-asset/23956428/baf7e52f-941d-4e09-b236-b608b301b37c?sp=r\u0026sv=2018-11-09\u0026sr=b\u0026spr=https\u0026se=2026-09-03T12%3A31%3A37Z\u0026rscd=attachment%3B+filename%3DDiskSpd.ZIP\u0026rsct=application%2Foctet-stream\u0026skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0\u0026sktid=398a6654-997b-47e9-b12b-9515b896b4de\u0026skt=2026-09-03T11%3A30%3A55Z\u0026ske=2026-09-03T12%3A31%3A37Z\u0026sks=b\u0026skv=2018-11-09\u0026sig=f86gbJkqioBnaKTDt50oF1ecO3i36KIRQ8zn9oXxRCY%3D\u0026jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4ODQzNjg4NSwibmJmIjoxNzg4NDM2NTg1LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.jiNwdCEXV7aYcAcEqXe6HjXvSyCpuBTtRYiQDd55cZk\u0026response-content-disposition=attachment%3B%20filename%3DDiskSpd.ZIP\u0026response-content-type=application%2Foctet-stream\u0027",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "300",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-03T19:57:36.0025554+08:00"
+}

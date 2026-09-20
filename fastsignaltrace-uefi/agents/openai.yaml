@@ -1,0 +1,7 @@
+interface:
+  display_name: "FastSignalTrace C-UEFI"
+  short_description: "Trace UEFI protocols, PPI, PCD, HOB, events, and state"
+  default_prompt: "Use $fastsignaltrace-uefi to scan this EDK2/UEFI source tree and return validated signal equations."
+
+policy:
+  allow_implicit_invocation: false

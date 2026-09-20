@@ -1,0 +1,7 @@
+interface:
+  display_name: "EqualAnalyzer"
+  short_description: "Trace equation paths, loops, and IO roles"
+  default_prompt: "Use $equalanalyzer to parse this equation file, print collapsed-loop signal paths, and verify IO roles."
+
+policy:
+  allow_implicit_invocation: true

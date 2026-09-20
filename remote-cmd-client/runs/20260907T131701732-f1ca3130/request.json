@@ -1,0 +1,8 @@
+﻿{
+    "run_id":  "20260907T131701732-f1ca3130",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  "download?",
+    "argument_count":  1,
+    "max_retries":  3,
+    "started_at":  "2026-09-07T13:17:01.7440382+08:00"
+}

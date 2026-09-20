@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T151409510-20df91bd",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "$ErrorActionPreference = \u0027SilentlyContinue\u0027\n\u0027ACTIVE_USER:\u0027\nGet-CimInstance -ClassName Win32_ComputerSystem | Select-Object UserName | Format-List\n\u0027EXPLORER_PROCESSES:\u0027\nGet-Process -Name explorer | Select-Object Id,SessionId,StartTime,Path | Format-List\n\u0027EXPLORER_BINARY:\u0027\nGet-Item -LiteralPath \u0027C:\\Windows\\explorer.exe\u0027 | Select-Object FullName,Length,VersionInfo | Format-List\nexit 0",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T15:14:09.5259459+08:00"
+}

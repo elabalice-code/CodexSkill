@@ -1,0 +1,4 @@
+interface:
+  display_name: "Callme Session"
+  short_description: "Queue prompts into existing Codex threads safely"
+  default_prompt: "Use $callme-session to queue this prompt to an existing Codex thread."

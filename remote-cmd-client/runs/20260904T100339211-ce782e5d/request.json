@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T100339211-ce782e5d",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Start-Process -FilePath \u0027C:\\Assets\\Geekbench-6.5.0-WindowsSetup.exe\u0027 -ArgumentList \u0027/SP-\u0027,\u0027/VERYSILENT\u0027,\u0027/SUPPRESSMSGBOXES\u0027,\u0027/NORESTART\u0027,\u0027/DIR=C:\\Assets\\Geekbench-6.5.0\u0027 -Wait -PassThru | Select-Object ExitCode,HasExited | ConvertTo-Json -Compress",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "600",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T10:03:39.2235091+08:00"
+}

@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260901T185924402-30e06423",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "download",
+                      "C:/Users/PC/Desktop/RemoteSupport/Alice/nas329-schema-evidence-20260901_1857.zip",
+                      "D:/Task_Panel/18_NAS/0_Nas2_OTA/6_NAS329_OtaCache/workspace/999_Docs/NAS-329_DebugValidation/20260901_172255/nas329-schema-evidence-20260901_1857.zip",
+                      "--device",
+                      "Samt_20260828_2220",
+                      "--timeout",
+                      "300",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-01T18:59:24.4228257+08:00"
+}

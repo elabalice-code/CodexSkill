@@ -1,0 +1,15 @@
+﻿{
+    "run_id":  "20260908T134128873-1d7d720d",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powercfg /getactivescheme",
+                      "--no-filecmd",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  6,
+    "max_retries":  3,
+    "started_at":  "2026-09-08T13:41:28.8837391+08:00"
+}

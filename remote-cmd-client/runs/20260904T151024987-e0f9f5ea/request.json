@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T151024987-e0f9f5ea",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "$ErrorActionPreference = \u0027SilentlyContinue\u0027\n\u0027=== IDENTITY_AND_PROCESS ===\u0027\n[pscustomobject]@{Computer=$env:COMPUTERNAME;User=[Security.Principal.WindowsIdentity]::GetCurrent().Name;Now=(Get-Date).ToString(\u0027o\u0027)} | Format-List\nGet-Process -Name \u0027Cinebench\u0027,\u0027Cinebench*\u0027 | Select-Object Id,ProcessName,StartTime,Path | Format-Table -AutoSize\n\u0027=== ASSET_VALIDATION_FILES ===\u0027\nGet-ChildItem -LiteralPath \u0027C:\\Assets\\AssetValidation\\AssetValidation-20260904T103354\u0027 -File | Sort-Object LastWriteTime -Descending | Select-Object Name,Length,LastWriteTime,FullName | Format-Table -AutoSize\n\u0027=== CINEBENCH_RECENT_FILES ===\u0027\n$roots = @(\n \u0027C:\\Assets\\Cinebench2026\u0027,\n \u0027C:\\ProgramData\\Maxon\u0027,\n \u0027C:\\Windows\\System32\\config\\systemprofile\\AppData\\Roaming\\Maxon\u0027,\n \u0027C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Maxon\u0027,\n \u0027C:\\Users\\Song\\AppData\\Roaming\\Maxon\u0027,\n \u0027C:\\Users\\Song\\AppData\\Local\\Maxon\u0027\n)\nforeach ($root in $roots) {\n if (Test-Path -LiteralPath $root) {\n  ROOT=$root\n  Get-ChildItem -LiteralPath $root -Recurse -File | Where-Object { $_.LastWriteTime -ge [datetime]\u00272026-09-04T11:20:00\u0027 } | Sort-Object LastWriteTime -Descending | Select-Object -First 40 Name,Length,LastWriteTime,FullName | Format-Table -AutoSize\n }\n}\n\u0027=== SCORE_OR_RESULT_CANDIDATES ===\u0027\nforeach ($root in $roots) {\n if (Test-Path -LiteralPath $root) {\n  Get-ChildItem -LiteralPath $root -Recurse -File | Where-Object { $_.Name -match \u0027(?i)score|result|benchmark|ranking|log|console\u0027 } | Sort-Object LastWriteTime -Descending | Select-Object -First 60 Name,Length,LastWriteTime,FullName | Format-Table -AutoSize\n }\n}",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "180",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T15:10:25.0031485+08:00"
+}

@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260903T193719642-b3022d99",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "upload",
+                      "D:\\Task_Panel\\6_6490_Dev\\Ex_Performances\\1_Grades\\1_Windows\\workspace\\0_Codes\\windowsbenchmarkscripts\\modules\\EnvironmentSnapshot.psm1",
+                      "C:\\Users\\Song\\Downloads\\RemoteSupport\\WindowsBenchWorkplace\\automation-test\\EnvironmentSnapshot.psm1",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-03T19:37:19.6554434+08:00"
+}

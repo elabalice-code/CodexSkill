@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T113348881-7892f460",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "[pscustomobject]@{Result=(Get-Content -LiteralPath \u0027C:\\Assets\\AssetValidation\\AssetValidation-20260904T103354\\speedometer-result.json\u0027 -Raw -ErrorAction SilentlyContinue);EdgeStdout=(Get-Content -LiteralPath \u0027C:\\Assets\\AssetValidation\\AssetValidation-20260904T103354\\speedometer-edge-stdout.txt\u0027 -Raw -ErrorAction SilentlyContinue);EdgeStderr=(Get-Content -LiteralPath \u0027C:\\Assets\\AssetValidation\\AssetValidation-20260904T103354\\speedometer-edge-stderr.txt\u0027 -Raw -ErrorAction SilentlyContinue);EdgeProcessCount=(Get-Process -Name \u0027msedge\u0027 -ErrorAction SilentlyContinue | Measure-Object).Count} | ConvertTo-Json -Depth 5 -Compress",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "180",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T11:33:48.8953948+08:00"
+}

@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260907T162159255-652ae26f",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powershell -NoProfile -ExecutionPolicy Bypass -File C:\\Users\\Public\\Downloads\\Inspect-Speedometer31-TaskPrereqs-20260907T161242.ps1 -TaskName Codex-Speedometer31-20260907T161242-QCS6490_1 -Port 9341",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "90",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-07T16:21:59.2713012+08:00"
+}

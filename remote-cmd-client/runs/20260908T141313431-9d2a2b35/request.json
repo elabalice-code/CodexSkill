@@ -1,0 +1,15 @@
+﻿{
+    "run_id":  "20260908T141313431-9d2a2b35",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Get-Content -LiteralPath C:\\Users\\LCT\\Desktop\\RemoteSupport\\Workplace\\3_BenchmarkRuns\\ASUS8270_Geekbench65_Thermal20s_Typeperf20s_20260908T1354\\run-metadata.json -Raw",
+                      "--no-filecmd",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  6,
+    "max_retries":  3,
+    "started_at":  "2026-09-08T14:13:13.4410097+08:00"
+}

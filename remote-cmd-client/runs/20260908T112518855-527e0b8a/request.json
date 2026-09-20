@@ -1,0 +1,14 @@
+﻿{
+    "run_id":  "20260908T112518855-527e0b8a",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Get-CimInstance Win32_ComputerSystem | Select-Object Name,Manufacturer,Model,UserName,TotalPhysicalMemory | Format-List",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  5,
+    "max_retries":  3,
+    "started_at":  "2026-09-08T11:25:18.8678127+08:00"
+}

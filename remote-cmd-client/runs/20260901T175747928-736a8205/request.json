@@ -1,0 +1,14 @@
+﻿{
+    "run_id":  "20260901T175747928-736a8205",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "$ErrorActionPreference=\u0027SilentlyContinue\u0027; $install=\u0027C:\\Program Files\\Infinix AI NAS\u0027; $versionFile=Join-Path $install \u0027VERSION.txt\u0027; $services=@(Get-Service | Where-Object { $_.Name -match \u0027Infinix|NAS\u0027 -or $_.DisplayName -match \u0027Infinix|NAS\u0027 } | Select-Object Name,DisplayName,Status,StartType); $processes=@(Get-Process | Where-Object { $_.ProcessName -match \u0027infinix|nas\u0027 } | Select-Object ProcessName,Id,SessionId,Path); $sessionUser=(Get-CimInstance Win32_ComputerSystem).UserName; $data=[ordered]@{hostname=$env:COMPUTERNAME;whoami=(\u0026 whoami);interactive_user=$sessionUser;temp=[IO.Path]::GetTempPath();install_path=$install;install_exists=(Test-Path -LiteralPath $install);version_exists=(Test-Path -LiteralPath $versionFile);version_text=(if(Test-Path -LiteralPath $versionFile){(Get-Content -LiteralPath $versionFile -Raw)}else{$null});services=$services;processes=$processes;logs_exists=(Test-Path -LiteralPath \u0027C:\\InfinixNAS\\logs\u0027)}; $data | ConvertTo-Json -Depth 5 -Compress",
+                      "--device",
+                      "Doll_FZJ",
+                      "--json"
+                  ],
+    "argument_count":  5,
+    "max_retries":  3,
+    "started_at":  "2026-09-01T17:57:47.9381976+08:00"
+}

@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260913T205926805-eb876c0d",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Get-Content -LiteralPath C:/Users/HCKTest/Desktop/RemoteSupport/ScreenshotChanges-20260913-2058.stdout.log -Tail 8; Get-Content -LiteralPath C:/Users/HCKTest/Desktop/RemoteSupport/ScreenshotChanges-20260913-2058.stderr.log -Tail 8; if (Test-Path -LiteralPath C:/Users/HCKTest/Desktop/RemoteSupport/ScreenshotChanges-20260913-2058/summary.json) { Get-Content -LiteralPath C:/Users/HCKTest/Desktop/RemoteSupport/ScreenshotChanges-20260913-2058/summary.json -Raw }",
+                      "--device",
+                      "MB06_Mini_6490",
+                      "--timeout",
+                      "60",
+                      "--no-filecmd",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-13T20:59:26.8175207+08:00"
+}

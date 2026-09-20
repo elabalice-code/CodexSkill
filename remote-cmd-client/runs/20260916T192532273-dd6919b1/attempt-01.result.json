@@ -1,0 +1,10 @@
+﻿{
+    "attempt":  1,
+    "started_at":  "2026-09-16T19:25:32.3309574+08:00",
+    "completed_at":  "2026-09-16T19:25:32.5677467+08:00",
+    "exit_code":  2,
+    "retryable_pre_execution_failure":  false,
+    "will_retry":  false,
+    "stdout_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\runs\\20260916T192532273-dd6919b1\\attempt-01.stdout.txt",
+    "stderr_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\runs\\20260916T192532273-dd6919b1\\attempt-01.stderr.txt"
+}

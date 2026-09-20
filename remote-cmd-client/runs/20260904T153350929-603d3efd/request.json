@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T153350929-603d3efd",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "$ErrorActionPreference = \u0027Continue\u0027\n$exe = \u0027C:\\Assets\\Cinebench2026\\Cinebench.exe\u0027\n\u0027=== SIGNATURE ===\u0027\n$sig = Get-AuthenticodeSignature -LiteralPath $exe\n[pscustomobject]@{Status=$sig.Status;StatusMessage=$sig.StatusMessage;SignerSubject=$sig.SignerCertificate.Subject;SignerIssuer=$sig.SignerCertificate.Issuer;SignerThumbprint=$sig.SignerCertificate.Thumbprint;SignerNotBefore=$sig.SignerCertificate.NotBefore;SignerNotAfter=$sig.SignerCertificate.NotAfter;TimestampSubject=$sig.TimeStamperCertificate.Subject;TimestampIssuer=$sig.TimeStamperCertificate.Issuer} | Format-List\n\u0027=== CHAIN ===\u0027\nif ($sig.SignerCertificate) {\n $chain = New-Object System.Security.Cryptography.X509Certificates.X509Chain\n $ok = $chain.Build($sig.SignerCertificate)\n \u0027CHAIN_OK=\u0027 + $ok\n $chain.ChainStatus | Select-Object Status,StatusInformation | Format-List\n $chain.ChainElements | ForEach-Object { [pscustomobject]@{Subject=$_.Certificate.Subject;Issuer=$_.Certificate.Issuer;Thumbprint=$_.Certificate.Thumbprint;NotAfter=$_.Certificate.NotAfter} } | Format-List\n}\n\u0027=== DIGICERT_STORES ===\u0027\n$stores = @(\u0027Cert:\\LocalMachine\\Root\u0027,\u0027Cert:\\LocalMachine\\CA\u0027,\u0027Cert:\\CurrentUser\\Root\u0027,\u0027Cert:\\CurrentUser\\CA\u0027)\nforeach ($store in $stores) {\n Write-Output (\u0027STORE=\u0027 + $store)\n Get-ChildItem -LiteralPath $store | Where-Object { $_.Subject -match \u0027DigiCert\u0027 -or $_.Issuer -match \u0027DigiCert\u0027 } | Select-Object Subject,Issuer,Thumbprint,NotBefore,NotAfter | Sort-Object Subject | Format-List\n}\n\u0027=== SYSTEM_TIME ===\u0027\nGet-Date -Format o\nexit 0",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T15:33:50.9417258+08:00"
+}

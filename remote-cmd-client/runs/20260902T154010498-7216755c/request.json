@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260902T154010498-7216755c",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "$env:TEMP",
+                      "--no-filecmd",
+                      "--device",
+                      "Doll_FZJ",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-02T15:40:10.5108675+08:00"
+}

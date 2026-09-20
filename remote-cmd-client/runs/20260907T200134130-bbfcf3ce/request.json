@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260907T200134130-bbfcf3ce",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "download",
+                      "C:\\Users\\HCKTest\\Desktop\\3rdeye\\Regs.exe",
+                      "D:\\Task_Panel\\6_6490_Dev\\17_Performance\\workspace\\4_Tests\\3rdeye\\Regs.exe",
+                      "--device",
+                      "MiniPC",
+                      "--timeout",
+                      "300",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-07T20:01:34.1404272+08:00"
+}

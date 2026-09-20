@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260913T205843883-28de99a2",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:/Users/HCKTest/Desktop/RemoteSupport/StartExportScreenshotChanges.ps1 -OutputDirectory C:/Users/HCKTest/Desktop/RemoteSupport/ScreenshotChanges-20260913-2058",
+                      "--device",
+                      "MB06_Mini_6490",
+                      "--timeout",
+                      "60",
+                      "--no-filecmd",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-13T20:58:43.8948007+08:00"
+}

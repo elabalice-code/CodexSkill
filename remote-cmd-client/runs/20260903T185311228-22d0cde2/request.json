@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260903T185311228-22d0cde2",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "upload",
+                      "D:\\Task_Panel\\6_6490_Dev\\Ex_Performances\\1_Grades\\1_Windows\\workspace\\0_Codes\\windowsbenchmarkscripts\\tools\\Collect-DisplaySettings.ps1",
+                      "C:\\Users\\Song\\Downloads\\RemoteSupport\\WindowsBenchWorkplace\\Collect-DisplaySettings.ps1",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-03T18:53:11.2401988+08:00"
+}

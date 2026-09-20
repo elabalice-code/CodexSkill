@@ -1,0 +1,4 @@
+interface:
+  display_name: "FastDeAI"
+  short_description: "Clean AI-style Markdown formatting noise"
+  default_prompt: "Use $fastdeai to clean AI-style formatting from Markdown while preserving code blocks."

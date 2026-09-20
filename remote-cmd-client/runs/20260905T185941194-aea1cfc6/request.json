@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T185941194-aea1cfc6",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\\Assets\\Run-DiskSpd-Initial-20260905.ps1 -OutputPath C:\\Assets\\DiskSpdRuns\\DiskSpd-20260905-QCS6490_1.stdout.txt -TestFilePath C:\\Assets\\DiskSpdRuns\\DiskSpd-20260905-QCS6490_1.dat",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T18:59:41.2051239+08:00"
+}

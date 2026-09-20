@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fastsearch"
+  short_description: "Boolean CLI search for large projects"
+  default_prompt: "Use $fastsearch to locate evidence across a large project with Boolean search."

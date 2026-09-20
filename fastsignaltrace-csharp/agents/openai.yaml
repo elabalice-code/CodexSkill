@@ -1,0 +1,7 @@
+interface:
+  display_name: "FastSignalTrace CSharp"
+  short_description: "Scan CSharp fields and emit signal equations"
+  default_prompt: "Use $fastsignaltrace-csharp to scan this CSharp source tree and return validated signal equations."
+
+policy:
+  allow_implicit_invocation: false

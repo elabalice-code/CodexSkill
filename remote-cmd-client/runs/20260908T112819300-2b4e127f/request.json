@@ -1,0 +1,14 @@
+﻿{
+    "run_id":  "20260908T112819300-2b4e127f",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Get-CimInstance Win32_UserAccount -Filter \"Name=\u0027LCT\u0027\" | Select-Object Name,Domain,SID,LocalAccount | Format-List",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  5,
+    "max_retries":  3,
+    "started_at":  "2026-09-08T11:28:19.3214963+08:00"
+}

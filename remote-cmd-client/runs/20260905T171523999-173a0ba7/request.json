@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T171523999-173a0ba7",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "$p=Get-Process geekbench6,geekbench_aarch64 -ErrorAction SilentlyContinue; if($p){\u0027GEEKBENCH_ACTIVE\u0027}else{\u0027GEEKBENCH_NOT_ACTIVE\u0027}",
+                      "--no-filecmd",
+                      "--device",
+                      "Kenai8270_1",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T17:15:24.0100796+08:00"
+}

@@ -1,0 +1,15 @@
+﻿{
+    "run_id":  "20260912T214352550-8f42ab75",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "upload",
+                      "D:\\Task_Panel\\0_ElabAlice\\0_FastTool\\9_FastScreenRecorder\\workspace\\diagnostics\\NetworkCorner.ps1",
+                      "C:\\Users\\HCKTest\\Desktop\\RemoteSupport\\NetworkCorner-20260912-2141.ps1",
+                      "--device",
+                      "MB06_Mini_6490",
+                      "--json"
+                  ],
+    "argument_count":  6,
+    "max_retries":  3,
+    "started_at":  "2026-09-12T21:43:52.5604173+08:00"
+}

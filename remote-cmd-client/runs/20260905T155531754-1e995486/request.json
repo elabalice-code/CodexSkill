@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T155531754-1e995486",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "\u0026 \u0027C:\\Program Files\\7-Zip\\7z.exe\u0027 x \u0027C:\\Users\\song\\Desktop\\RemoteSupport\\1_Assets\\DiskSpd-v2.2-official.zip\u0027 \u0027-oC:\\Assets\\DiskSpd-v2.2\u0027",
+                      "--no-filecmd",
+                      "--device",
+                      "Kenai8270_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T15:55:31.7657565+08:00"
+}

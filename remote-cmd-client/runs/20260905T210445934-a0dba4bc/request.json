@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T210445934-a0dba4bc",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powershell -NoProfile -ExecutionPolicy Bypass -File C:\\Assets\\CinebenchResultProbe-20260905T2110.ps1",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "300",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T21:04:45.9468033+08:00"
+}

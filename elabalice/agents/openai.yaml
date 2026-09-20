@@ -1,0 +1,4 @@
+interface:
+  display_name: "Elabalice"
+  short_description: "Personal skill group staging area"
+  default_prompt: "Use $elabalice to apply the Elabalice skill group."

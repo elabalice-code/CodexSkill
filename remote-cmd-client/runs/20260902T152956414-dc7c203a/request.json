@@ -1,0 +1,16 @@
+﻿{
+    "run_id":  "20260902T152956414-dc7c203a",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "whoami \u0026 hostname \u0026 ver \u0026 echo PROCESSOR_ARCHITECTURE=%PROCESSOR_ARCHITECTURE% \u0026 echo TEMP=%TEMP% \u0026 echo ---TOOLS--- \u0026 where typeperf.exe \u0026 where wpr.exe \u0026 where wpaexporter.exe \u0026 where wpa.exe \u0026 where xperf.exe \u0026 where procmon.exe \u0026 where procmon64.exe \u0026 where rammap.exe \u0026 where gpuview.exe \u0026 where powercfg.exe \u0026 where dumpbin.exe",
+                      "--device",
+                      "Doll_FZJ",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  7,
+    "max_retries":  3,
+    "started_at":  "2026-09-02T15:29:56.4251085+08:00"
+}

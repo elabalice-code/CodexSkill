@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T184420344-8908140b",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "download",
+                      "C:/Assets/AssetValidation/AssetValidation-20260904T103354/cinebench-manual-run-fullscreen-20260904T1630.png",
+                      "D:/Task_Panel/6_6490_Dev/Ex_Performances/1_Grades/1_Windows/workspace/999_Docs/TestManual/Cinebench2026_ARM64_20260904/cinebench-manual-run-fullscreen-20260904T1840.png",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "300",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T18:44:20.3583088+08:00"
+}

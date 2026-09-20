@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T171752535-b232a97d",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "$p=Get-CimInstance Win32_Process | Where-Object { $_.Name -eq \u0027powershell.exe\u0027 -and $_.CommandLine -like \u0027*Run-Geekbench6-CpuFive.ps1*\u0027 }; if($p){\u0027RUNNER_ACTIVE\u0027}else{\u0027RUNNER_NOT_ACTIVE\u0027}",
+                      "--no-filecmd",
+                      "--device",
+                      "Kenai8270_1",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T17:17:52.5450112+08:00"
+}

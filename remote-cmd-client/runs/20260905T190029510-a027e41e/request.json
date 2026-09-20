@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T190029510-a027e41e",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\\Assets\\Run-DiskSpd-Initial-20260905.ps1 -OutputPath C:\\Assets\\DiskSpdRuns\\DiskSpd-20260905-Kenai8270_1.stdout.txt -TestFilePath C:\\Assets\\DiskSpdRuns\\DiskSpd-20260905-Kenai8270_1.dat",
+                      "--no-filecmd",
+                      "--device",
+                      "Kenai8270_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T19:00:29.5206225+08:00"
+}

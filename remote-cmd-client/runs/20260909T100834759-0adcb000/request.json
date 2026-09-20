@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260909T100834759-0adcb000",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "echo RCMD_DIRECT_OK",
+                      "--no-filecmd",
+                      "--device",
+                      "MB06_Mini_6490",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-09T10:08:34.7705299+08:00"
+}

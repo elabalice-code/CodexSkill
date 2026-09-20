@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260907T131821900-6a00867c",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "download",
+                      "C:\\Assets\\Geekbench65-TZ-Frequency20s-20260907T1307\\run-metadata.json",
+                      "D:\\Task_Panel\\6_6490_Dev\\Ex_Performances\\1_Grades\\1_Windows\\workspace\\1_AgentOutputs\\QCS6490_1-Geekbench65-Rerun-20260907T1307-metadata.json",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-07T13:18:21.9124977+08:00"
+}

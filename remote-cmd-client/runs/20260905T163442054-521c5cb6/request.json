@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T163442054-521c5cb6",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Start-Process -FilePath explorer.exe -ArgumentList \u0027C:\\Assets\u0027; \u0027EXPLORER_OPEN_REQUESTED\u0027",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T16:34:42.0645033+08:00"
+}

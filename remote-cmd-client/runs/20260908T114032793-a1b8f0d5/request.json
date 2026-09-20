@@ -1,0 +1,15 @@
+﻿{
+    "run_id":  "20260908T114032793-a1b8f0d5",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "upload",
+                      "D:\\Task_Panel\\6_6490_Dev\\Ex_Performances\\1_Grades\\1_Windows\\workspace\\1_AgentOutputs\\Capture-ThermalTrace.ps1",
+                      "C:\\Users\\LCT\\Desktop\\RemoteSupport\\Workplace\\2_BenchmarkScripts\\ASUS8270_20260908\\Capture-ThermalTrace.ps1",
+                      "--timeout",
+                      "300",
+                      "--json"
+                  ],
+    "argument_count":  6,
+    "max_retries":  3,
+    "started_at":  "2026-09-08T11:40:32.8091746+08:00"
+}

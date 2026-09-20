@@ -1,0 +1,4 @@
+interface:
+  display_name: "FastWavGet"
+  short_description: "从长音视频按毫秒裁剪并验证可复用的 WAV 语音片段"
+  default_prompt: "Use $fastwavget to extract and verify a precise WAV utterance from this long recording."

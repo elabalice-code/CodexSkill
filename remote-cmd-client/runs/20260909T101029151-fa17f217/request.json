@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260909T101029151-fa17f217",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Get-PnpDevice -Class Net",
+                      "--no-filecmd",
+                      "--device",
+                      "MB06_Mini_6490",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-09T10:10:29.1607066+08:00"
+}

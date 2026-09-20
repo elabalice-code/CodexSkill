@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260902T155418687-614f0858",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\windows\\TEMP\\CodexWindowsToolValidation_20260902_1540\\followup.ps1\" -OutputDirectory \"C:\\windows\\TEMP\\CodexWindowsToolValidation_20260902_1540\"",
+                      "--no-filecmd",
+                      "--device",
+                      "Doll_FZJ",
+                      "--timeout",
+                      "300",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-02T15:54:18.6992720+08:00"
+}

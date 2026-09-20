@@ -1,0 +1,53 @@
+﻿{
+    "run_id":  "20260902T152956414-dc7c203a",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "completed_at":  "2026-09-02T15:37:58.6784355+08:00",
+    "status":  "completed",
+    "exit_code":  1,
+    "attempt_count":  4,
+    "retries_performed":  3,
+    "max_retries":  3,
+    "stopped_reason":  "retry_limit_reached",
+    "attempts":  [
+                     {
+                         "attempt":  1,
+                         "started_at":  "2026-09-02T15:29:56.4648952+08:00",
+                         "completed_at":  "2026-09-02T15:31:52.9273377+08:00",
+                         "exit_code":  1,
+                         "retryable_pre_execution_failure":  true,
+                         "will_retry":  true,
+                         "stdout_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\runs\\20260902T152956414-dc7c203a\\attempt-01.stdout.txt",
+                         "stderr_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\runs\\20260902T152956414-dc7c203a\\attempt-01.stderr.txt"
+                     },
+                     {
+                         "attempt":  2,
+                         "started_at":  "2026-09-02T15:31:54.9514951+08:00",
+                         "completed_at":  "2026-09-02T15:33:55.1334060+08:00",
+                         "exit_code":  1,
+                         "retryable_pre_execution_failure":  true,
+                         "will_retry":  true,
+                         "stdout_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\runs\\20260902T152956414-dc7c203a\\attempt-02.stdout.txt",
+                         "stderr_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\runs\\20260902T152956414-dc7c203a\\attempt-02.stderr.txt"
+                     },
+                     {
+                         "attempt":  3,
+                         "started_at":  "2026-09-02T15:33:59.1410209+08:00",
+                         "completed_at":  "2026-09-02T15:35:57.1684761+08:00",
+                         "exit_code":  1,
+                         "retryable_pre_execution_failure":  true,
+                         "will_retry":  true,
+                         "stdout_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\runs\\20260902T152956414-dc7c203a\\attempt-03.stdout.txt",
+                         "stderr_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\runs\\20260902T152956414-dc7c203a\\attempt-03.stderr.txt"
+                     },
+                     {
+                         "attempt":  4,
+                         "started_at":  "2026-09-02T15:36:02.1785884+08:00",
+                         "completed_at":  "2026-09-02T15:37:58.6754420+08:00",
+                         "exit_code":  1,
+                         "retryable_pre_execution_failure":  true,
+                         "will_retry":  false,
+                         "stdout_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\runs\\20260902T152956414-dc7c203a\\attempt-04.stdout.txt",
+                         "stderr_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\runs\\20260902T152956414-dc7c203a\\attempt-04.stderr.txt"
+                     }
+                 ]
+}

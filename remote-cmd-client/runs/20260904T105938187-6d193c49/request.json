@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T105938187-6d193c49",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "[pscustomobject]@{FileCount=(Get-ChildItem -LiteralPath \u0027C:\\Assets\\Cinebench2026\u0027 -Recurse -File -ErrorAction SilentlyContinue | Measure-Object).Count;TotalBytes=(Get-ChildItem -LiteralPath \u0027C:\\Assets\\Cinebench2026\u0027 -Recurse -File -ErrorAction SilentlyContinue | Measure-Object -Property Length -Sum).Sum;ExpandArchiveProcessCount=(Get-Process -Name \u0027powershell\u0027 -ErrorAction SilentlyContinue | Measure-Object).Count} | ConvertTo-Json -Compress",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "180",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T10:59:38.1998862+08:00"
+}

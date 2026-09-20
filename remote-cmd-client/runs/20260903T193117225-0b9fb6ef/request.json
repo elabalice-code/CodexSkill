@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260903T193117225-0b9fb6ef",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powershell -NoProfile -ExecutionPolicy Bypass -File C:\\Users\\Song\\Downloads\\RemoteSupport\\WindowsBenchWorkplace\\Collect-SpeedometerSource.ps1",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-03T19:31:17.2356169+08:00"
+}

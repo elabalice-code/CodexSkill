@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T160822438-a7000514",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "$ErrorActionPreference = \u0027Stop\u0027\n$thumbprint = \u00277B0F360B775F76C94A12CA48445AA2D2A875701C\u0027\n$outputPath = \u0027C:\\Assets\\AssetValidation\\AssetValidation-20260904T103354\\DigiCert-Trusted-G4-CodeSigning-2021-CA1-7B0F360B.cer\u0027\nif (Test-Path -LiteralPath $outputPath) { throw (\u0027Refusing to overwrite: \u0027 + $outputPath) }\n$cert = Get-Item -LiteralPath (\u0027Cert:\\CurrentUser\\CA\\\u0027 + $thumbprint)\nif ($cert.Thumbprint -ne $thumbprint) { throw \u0027Certificate thumbprint mismatch\u0027 }\nif ($cert.Subject -notmatch \u0027DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1\u0027) { throw (\u0027Unexpected certificate subject: \u0027 + $cert.Subject) }\nExport-Certificate -Cert $cert -FilePath $outputPath -Type CERT | Out-Null\n$file = Get-Item -LiteralPath $outputPath\n[pscustomobject]@{OutputPath=$file.FullName;Length=$file.Length;SHA256=(Get-FileHash -LiteralPath $outputPath -Algorithm SHA256).Hash;Subject=$cert.Subject;Issuer=$cert.Issuer;Thumbprint=$cert.Thumbprint;NotAfter=$cert.NotAfter.ToString(\u0027o\u0027)} | Format-List",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T16:08:22.4540666+08:00"
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Session Startup Flow"
+  short_description: "Elabalice new-session startup protocol"
+  default_prompt: "Use $session-startup-flow to start an elabalice technical session."

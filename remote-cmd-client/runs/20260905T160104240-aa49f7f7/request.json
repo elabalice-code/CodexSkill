@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T160104240-aa49f7f7",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "$x=Get-Process msedge -ErrorAction SilentlyContinue; if($x){\u0027RUNNING\u0027}else{\u0027NOT_RUNNING\u0027}",
+                      "--no-filecmd",
+                      "--device",
+                      "Kenai8270_1",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T16:01:04.2513791+08:00"
+}

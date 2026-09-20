@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260907T140608864-7338f7a4",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "typeperf \"\\Processor Information(*)\\% Processor Performance\" \"\\Processor Information(*)\\% Processor Utility\" \"\\Processor Information(*)\\Processor Frequency\" -si 1 -sc 3",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-07T14:06:08.8770155+08:00"
+}

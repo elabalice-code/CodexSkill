@@ -1,0 +1,15 @@
+﻿{
+    "run_id":  "20260908T134220591-e956b7a5",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Test-Path \"C:\\Program Files\\Geekbench 6\\geekbench6.exe\"",
+                      "--no-filecmd",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  6,
+    "max_retries":  3,
+    "started_at":  "2026-09-08T13:42:20.6015742+08:00"
+}

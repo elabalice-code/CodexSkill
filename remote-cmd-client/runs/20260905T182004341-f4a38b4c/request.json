@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T182004341-f4a38b4c",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "download",
+                      "C:\\Assets\\GeekbenchResults\\Geekbench6-CpuFive-20260905T091220240Z\\run-02.stdout.txt",
+                      "D:\\Task_Panel\\6_6490_Dev\\Ex_Performances\\1_Grades\\1_Windows\\workspace\\999_Docs\\RawArtifacts\\Geekbench6-CpuFive-20260905\\QCS6490_1\\run-02.stdout.txt",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "300",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T18:20:04.3414971+08:00"
+}

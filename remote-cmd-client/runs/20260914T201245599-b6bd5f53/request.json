@@ -1,0 +1,12 @@
+﻿{
+    "run_id":  "20260914T201245599-b6bd5f53",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "config",
+                      "show",
+                      "--json"
+                  ],
+    "argument_count":  3,
+    "max_retries":  3,
+    "started_at":  "2026-09-14T20:12:45.6135209+08:00"
+}

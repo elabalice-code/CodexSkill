@@ -1,0 +1,13 @@
+﻿{
+    "run_id":  "20260901T162614032-638bfc1c",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "quser",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  5,
+    "started_at":  "2026-09-01T16:26:14.0450966+08:00"
+}

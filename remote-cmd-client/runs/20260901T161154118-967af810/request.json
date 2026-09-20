@@ -1,0 +1,13 @@
+﻿{
+    "run_id":  "20260901T161154118-967af810",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "hostname",
+                      "--device",
+                      "Samt_20260828_2220",
+                      "--json"
+                  ],
+    "argument_count":  5,
+    "started_at":  "2026-09-01T16:11:54.1286692+08:00"
+}

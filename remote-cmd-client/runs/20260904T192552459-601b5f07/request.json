@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T192552459-601b5f07",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "$ErrorActionPreference = \u0027Stop\u0027\n$rankingDir = \u0027C:\\Users\\Song\\Documents\\MAXON\\Cinebench_2026.1.0\\cb_ranking\u0027\n\u0027=== NOW ===\u0027\nGet-Date -Format o\n\u0027=== PROCESS ===\u0027\nGet-Process -Name Cinebench -ErrorAction SilentlyContinue | Select-Object Id,SessionId,StartTime,CPU,WorkingSet64,MainWindowTitle | Format-List\n\u0027=== RANKING_FILES ===\u0027\n$files = @(Get-ChildItem -LiteralPath $rankingDir -File | Sort-Object LastWriteTime -Descending)\n$files | Select-Object Name,Length,CreationTime,LastWriteTime,FullName | Format-List\n\u0027=== LATEST_CONTENT ===\u0027\nif ($files.Count -gt 0) {\n $latest = $files[0]\n \u0027LATEST_PATH=\u0027 + $latest.FullName\n \u0027LATEST_SHA256=\u0027 + (Get-FileHash -LiteralPath $latest.FullName -Algorithm SHA256).Hash\n Get-Content -LiteralPath $latest.FullName\n}",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T19:25:52.4711937+08:00"
+}

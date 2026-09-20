@@ -1,0 +1,13 @@
+﻿{
+    "run_id":  "20260901T161843993-1dca2248",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "list",
+                      "--all",
+                      "--days",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  5,
+    "started_at":  "2026-09-01T16:18:44.0134625+08:00"
+}

@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260907T161820483-1ebe7994",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "upload",
+                      "D:\\Task_Panel\\6_6490_Dev\\Ex_Performances\\1_Grades\\1_Windows\\workspace\\1_AgentOutputs\\Inspect-Speedometer31-TaskPrereqs.ps1",
+                      "C:\\Users\\Public\\Downloads\\Inspect-Speedometer31-TaskPrereqs-20260907T161242.ps1",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-07T16:18:20.4962495+08:00"
+}

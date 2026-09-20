@@ -1,0 +1,16 @@
+﻿{
+    "run_id":  "20260905T152940404-437af1c3",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Get-ChildItem -LiteralPath C:\\Assets\\KenaiBenchmark\\scripts -Recurse -File | Select-Object FullName,Length; Get-ChildItem -LiteralPath C:\\Assets -Recurse -File | Where-Object { $_.Name -match \u0027diskspd|speedometer|edge\u0027 } | Select-Object FullName,Length",
+                      "--device",
+                      "Kenai8270_1",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  7,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T15:29:40.4145647+08:00"
+}

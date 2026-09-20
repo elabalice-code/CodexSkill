@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T163815851-e85ecabf",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "download",
+                      "C:\\Users\\Song\\Downloads\\speedometer-3-2026-09-05T08_36_35.138Z.csv",
+                      "D:\\Task_Panel\\6_6490_Dev\\Ex_Performances\\1_Grades\\1_Windows\\workspace\\999_Docs\\QCS6490_1_Speedometer3.1_20260905T083635138Z.csv",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T16:38:15.8620730+08:00"
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "FastVideoCut"
+  short_description: "Clip a local video by time range"
+  default_prompt: "Use $fastvideocut to extract the requested time range from a local video."

@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260902T155400319-2faf2ee5",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "upload",
+                      "D:\\Task_Panel\\6_6490_Dev\\17_Performance\\workspace\\remote_windows_tool_followup.ps1",
+                      "C:\\windows\\TEMP\\CodexWindowsToolValidation_20260902_1540\\followup.ps1",
+                      "--device",
+                      "Doll_FZJ",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-02T15:54:00.3299904+08:00"
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "PM Danger Signal"
+  short_description: "PM risk escalation and dependency checks"
+  default_prompt: "Use $pm-danger-signal to turn project risk signals into clear escalation language."

@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260914T011851522-e52e6cbe",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Get-Content -LiteralPath C:/Users/HCKTest/Desktop/RemoteSupport/ScreenshotChanges-20260913-2058.stdout.log -Tail 5; Get-Content -LiteralPath C:/Users/HCKTest/Desktop/RemoteSupport/ScreenshotChanges-20260913-2058.stderr.log -Tail 10; if (Test-Path -LiteralPath C:/Users/HCKTest/Desktop/RemoteSupport/ScreenshotChanges-20260913-2058/summary.json) { Get-Content -LiteralPath C:/Users/HCKTest/Desktop/RemoteSupport/ScreenshotChanges-20260913-2058/summary.json -Raw }; Get-Item -LiteralPath C:/Users/HCKTest/Desktop/RemoteSupport/ScreenshotChanges-20260913-2058/hashes.csv -ErrorAction SilentlyContinue | Select-Object Name,Length | ConvertTo-Json; Get-Content -LiteralPath C:/Users/HCKTest/Desktop/RemoteSupport/NetworkShots/.control/supervisor.json -Raw; $captureState = Get-Content -LiteralPath C:/Users/HCKTest/Desktop/RemoteSupport/NetworkShots/.control/worker.json -Raw | ConvertFrom-Json; $captureState | Select-Object Status,Count,LastCaptureUtc,HeartbeatUtc,Error,FreeBytes | ConvertTo-Json; Get-Item -LiteralPath $captureState.LastFile | Select-Object FullName,Length | ConvertTo-Json; [DateTime]::UtcNow.ToString()",
+                      "--device",
+                      "MB06_Mini_6490",
+                      "--timeout",
+                      "60",
+                      "--no-filecmd",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-14T01:18:51.5338914+08:00"
+}

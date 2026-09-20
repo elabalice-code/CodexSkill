@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T101845589-ada0d7d3",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "[pscustomobject]@{RequestedDirExists=(Test-Path -LiteralPath \u0027C:\\Assets\\Geekbench-6.5.0\u0027);DefaultDirExists=(Test-Path -LiteralPath \u0027C:\\Program Files\\Geekbench 6\u0027);InstallerProcesses=@(Get-Process -Name \u0027Geekbench-6.5.0-WindowsSetup\u0027 -ErrorAction SilentlyContinue | Select-Object ProcessName,Id,Responding);RequestedFiles=@(Get-ChildItem -LiteralPath \u0027C:\\Assets\\Geekbench-6.5.0\u0027 -Recurse -File -ErrorAction SilentlyContinue | Select-Object FullName,Length)} | ConvertTo-Json -Depth 5 -Compress",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T10:18:45.6021545+08:00"
+}

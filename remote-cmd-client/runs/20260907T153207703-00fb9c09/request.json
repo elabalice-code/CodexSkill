@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260907T153207703-00fb9c09",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powershell -NoProfile -Command \"$cs=Get-CimInstance Win32_ComputerSystem; $os=Get-CimInstance Win32_OperatingSystem; $disk=Get-CimInstance Win32_LogicalDisk -Filter \\\"DeviceID=\u0027C:\u0027\\\"; [pscustomobject]@{RemoteIdentity=[Security.Principal.WindowsIdentity]::GetCurrent().Name;InteractiveUser=$cs.UserName;OSArchitecture=$os.OSArchitecture;FreeGiB=[math]::Round($disk.FreeSpace/1GB,2);ExistingArm64=Test-Path -LiteralPath \u0027C:\\Assets\\DiskSpd-v2.2\\arm64\\diskspd.exe\u0027;DiskSpdProcesses=@(Get-Process -Name diskspd -ErrorAction SilentlyContinue).Count;TaskService=(Get-Service Schedule).Status}|ConvertTo-Json -Compress\"",
+                      "--no-filecmd",
+                      "--device",
+                      "MiniPC",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-07T15:32:07.7158992+08:00"
+}

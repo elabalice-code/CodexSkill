@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260913T202029478-a99833ed",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:/Users/HCKTest/Desktop/RemoteSupport/NetworkCornerTimer.ps1 -Mode Status",
+                      "--device",
+                      "MB06_Mini_6490",
+                      "--timeout",
+                      "60",
+                      "--no-filecmd",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-13T20:20:29.4898236+08:00"
+}

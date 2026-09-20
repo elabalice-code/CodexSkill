@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T104325666-39309b03",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "[pscustomobject]@{Processes=@(Get-Process -Name \u0027geekbench*\u0027 -ErrorAction SilentlyContinue | Select-Object ProcessName,Id,CPU,Responding);OutputExists=(Test-Path -LiteralPath \u0027C:\\Assets\\AssetValidation\\AssetValidation-20260904T103354\\geekbench-stdout.txt\u0027);OutputLength=(Get-Item -LiteralPath \u0027C:\\Assets\\AssetValidation\\AssetValidation-20260904T103354\\geekbench-stdout.txt\u0027 -ErrorAction SilentlyContinue).Length} | ConvertTo-Json -Depth 4 -Compress",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T10:43:25.6771856+08:00"
+}

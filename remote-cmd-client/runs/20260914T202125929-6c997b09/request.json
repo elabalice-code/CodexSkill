@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260914T202125929-6c997b09",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Get-ChildItem -Path C:\\qcsetup -Filter *WCH* -Recurse -Force -ErrorAction SilentlyContinue",
+                      "--no-filecmd",
+                      "--device",
+                      "HongheSleeper",
+                      "--timeout",
+                      "45",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-14T20:21:25.9409980+08:00"
+}

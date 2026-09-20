@@ -1,0 +1,16 @@
+﻿{
+    "run_id":  "20260907T185650377-dc69606b",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powershell -NoProfile -Command \"(Get-ChildItem -Path \u0027C:\\Users\\*\\Desktop\\3rdeye\u0027 -Directory -Force -ErrorAction SilentlyContinue).FullName\"",
+                      "--device",
+                      "MiniPC",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  7,
+    "max_retries":  3,
+    "started_at":  "2026-09-07T18:56:50.3912780+08:00"
+}

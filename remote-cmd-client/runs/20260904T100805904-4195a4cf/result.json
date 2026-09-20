@@ -1,0 +1,23 @@
+﻿{
+    "run_id":  "20260904T100805904-4195a4cf",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "completed_at":  "2026-09-04T10:08:14.6242264+08:00",
+    "status":  "completed",
+    "exit_code":  1,
+    "attempt_count":  1,
+    "retries_performed":  0,
+    "max_retries":  3,
+    "stopped_reason":  "non_retryable_or_ambiguous_failure",
+    "attempts":  [
+                     {
+                         "attempt":  1,
+                         "started_at":  "2026-09-04T10:08:05.9589843+08:00",
+                         "completed_at":  "2026-09-04T10:08:14.6172211+08:00",
+                         "exit_code":  1,
+                         "retryable_pre_execution_failure":  false,
+                         "will_retry":  false,
+                         "stdout_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\runs\\20260904T100805904-4195a4cf\\attempt-01.stdout.txt",
+                         "stderr_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\runs\\20260904T100805904-4195a4cf\\attempt-01.stderr.txt"
+                     }
+                 ]
+}

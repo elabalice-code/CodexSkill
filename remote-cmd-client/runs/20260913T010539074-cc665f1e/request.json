@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260913T010539074-cc665f1e",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "[System.IO.Directory]::GetFiles(\"C:/Users/HCKTest/Desktop/RemoteSupport/NetworkShots\", \"*.png\", [System.IO.SearchOption]::AllDirectories).Length",
+                      "--device",
+                      "MB06_Mini_6490",
+                      "--timeout",
+                      "60",
+                      "--no-filecmd",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-13T01:05:39.0927000+08:00"
+}

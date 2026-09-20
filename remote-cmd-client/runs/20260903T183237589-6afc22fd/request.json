@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260903T183237589-6afc22fd",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "cmd /c dir \"C:\\Program Files\"",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "90",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-03T18:32:37.6006781+08:00"
+}

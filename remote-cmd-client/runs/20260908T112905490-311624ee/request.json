@@ -1,0 +1,14 @@
+﻿{
+    "run_id":  "20260908T112905490-311624ee",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Get-Item \u0027C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\u0027 | Select-Object FullName,@{N=\u0027FileVersion\u0027;E={$_.VersionInfo.FileVersion}},@{N=\u0027ProductVersion\u0027;E={$_.VersionInfo.ProductVersion}} | Format-List",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  5,
+    "max_retries":  3,
+    "started_at":  "2026-09-08T11:29:05.5011945+08:00"
+}

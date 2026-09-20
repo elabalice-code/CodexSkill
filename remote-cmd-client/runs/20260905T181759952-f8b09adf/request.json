@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T181759952-f8b09adf",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "$d=Get-ChildItem -LiteralPath C:\\Assets\\GeekbenchResults -Directory | Sort-Object CreationTimeUtc -Descending | Select-Object -First 1; if($null -eq $d){\u0027NO_RESULT_DIRECTORY\u0027}else{\u0027RESULT_DIRECTORY=\u0027 + $d.FullName; Get-Content -LiteralPath (Join-Path $d.FullName \u0027manifest.json\u0027) -Raw}",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T18:17:59.9689417+08:00"
+}

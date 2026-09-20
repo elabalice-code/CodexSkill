@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260901T184130754-c4b1484f",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "download",
+                      "C:/Users/PC/Desktop/RemoteSupport/Alice/nas329-uninstall-1.5.0.log",
+                      "D:/Task_Panel/18_NAS/0_Nas2_OTA/6_NAS329_OtaCache/workspace/999_Docs/NAS-329_DebugValidation/20260901_172255/nas329-uninstall-clean.log",
+                      "--device",
+                      "Samt_20260828_2220",
+                      "--timeout",
+                      "300",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-01T18:41:30.7696281+08:00"
+}

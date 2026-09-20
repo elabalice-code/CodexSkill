@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T151645342-d04ad037",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "$ErrorActionPreference = \u0027SilentlyContinue\u0027\n$since = [datetime]\u00272026-09-04T15:14:00\u0027\n\u0027=== PROCESS ===\u0027\nGet-Process | Where-Object { $_.ProcessName -match \u0027Cinebench|Cinema|Maxon\u0027 } | Select-Object Id,ProcessName,SessionId,StartTime,Path | Format-List\n\u0027=== EXECUTABLE ===\u0027\n$exe = \u0027C:\\Assets\\Cinebench2026\\Cinebench.exe\u0027\nGet-Item -LiteralPath $exe | Select-Object FullName,Length,LastWriteTime,@{Name=\u0027FileVersion\u0027;Expression={$_.VersionInfo.FileVersion}},@{Name=\u0027ProductVersion\u0027;Expression={$_.VersionInfo.ProductVersion}} | Format-List\nGet-FileHash -LiteralPath $exe -Algorithm SHA256 | Format-List\nGet-AuthenticodeSignature -LiteralPath $exe | Select-Object Status,StatusMessage,SignerCertificate | Format-List\n\u0027=== RECENT_FILES ===\u0027\n$roots = @(\u0027C:\\Assets\\Cinebench2026\u0027,\u0027C:\\Users\\Song\\AppData\\Roaming\\Maxon\u0027,\u0027C:\\Users\\Song\\AppData\\Local\\Maxon\u0027,\u0027C:\\Users\\Song\\Documents\\MAXON\u0027,\u0027C:\\ProgramData\\Maxon\u0027)\n$recent = @()\nforeach ($root in $roots) {\n if (Test-Path -LiteralPath $root) {\n  $recent += Get-ChildItem -LiteralPath $root -Recurse -File | Where-Object { $_.LastWriteTime -ge $since }\n }\n}\n$recent | Sort-Object LastWriteTime -Descending | Select-Object -First 80 Name,Length,LastWriteTime,FullName | Format-List\n\u0027=== BROKEN_OR_ERROR_TEXT ===\u0027\nforeach ($file in ($recent | Where-Object { $_.Length -le 2097152 -and $_.Extension -match \u0027^\\.(txt|log|json|xml|ini|cfg)$\u0027 })) {\n $matches = Select-String -LiteralPath $file.FullName -Pattern \u0027binary\u0027,\u0027broken\u0027,\u0027corrupt\u0027,\u0027error\u0027,\u0027failed\u0027,\u0027exception\u0027 -SimpleMatch\n if ($matches) {\n  Write-Output (\u0027FILE=\u0027 + $file.FullName)\n  $matches | Select-Object -First 30 | ForEach-Object { $_.Line }\n }\n}\n\u0027=== APPLICATION_EVENTS ===\u0027\nGet-WinEvent -FilterHashtable @{LogName=\u0027Application\u0027;StartTime=$since} -MaxEvents 100 | Where-Object { $_.ProviderName -match \u0027Cinebench|Maxon|Application Error|Windows Error Reporting\u0027 -or $_.Message -match \u0027Cinebench|Maxon|binary file|broken\u0027 } | Select-Object TimeCreated,Id,LevelDisplayName,ProviderName,Message | Format-List\nexit 0",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "180",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T15:16:45.3544940+08:00"
+}

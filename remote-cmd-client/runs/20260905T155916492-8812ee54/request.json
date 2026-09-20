@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T155916492-8812ee54",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Invoke-WebRequest http://127.0.0.1:9333/json/version -UseBasicParsing | Select-Object -ExpandProperty Content",
+                      "--no-filecmd",
+                      "--device",
+                      "Kenai8270_1",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T15:59:16.5043174+08:00"
+}

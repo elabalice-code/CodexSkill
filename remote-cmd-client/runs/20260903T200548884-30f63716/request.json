@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260903T200548884-30f63716",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powershell -NoProfile -ExecutionPolicy Bypass -File C:\\Users\\Song\\Downloads\\RemoteSupport\\WindowsBenchWorkplace\\Start-CdpBrowserHeadless.ps1",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-03T20:05:48.8958595+08:00"
+}

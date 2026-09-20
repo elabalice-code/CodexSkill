@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T185910960-0cbbbb60",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "upload",
+                      "D:\\Task_Panel\\6_6490_Dev\\Ex_Performances\\1_Grades\\1_Windows\\workspace\\1_Assets\\Run-DiskSpd-Initial-20260905.ps1",
+                      "C:\\Assets\\Run-DiskSpd-Initial-20260905.ps1",
+                      "--device",
+                      "Kenai8270_1",
+                      "--timeout",
+                      "300",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T18:59:10.9714257+08:00"
+}

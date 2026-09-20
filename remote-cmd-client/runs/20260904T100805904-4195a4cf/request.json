@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T100805904-4195a4cf",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Get-CimInstance Win32_Process | Where-Object { .Name -Like \u0027*Geekbench*\u0027 -or .ParentProcessId -eq 11696 } | Select-Object Name,ProcessId,ParentProcessId,CommandLine | ConvertTo-Json -Compress",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T10:08:05.9169082+08:00"
+}

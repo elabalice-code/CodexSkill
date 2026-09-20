@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260903T200040471-1f129f03",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "C:\\Assets\\DiskSpd-v2.2\\arm64\\diskspd.exe -c32M -d5 -W0 -C0 -b4K -r -o1 -t1 -Sh -w0 -L C:\\Assets\\diskspd-smoke.dat",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-03T20:00:40.4831342+08:00"
+}

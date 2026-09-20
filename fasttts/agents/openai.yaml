@@ -1,0 +1,4 @@
+interface:
+  display_name: "FastTTS"
+  short_description: "Synthesize text into WAV with local or Volc TTS"
+  default_prompt: "Use FastTTS to synthesize the supplied text into a WAV file at the requested path."

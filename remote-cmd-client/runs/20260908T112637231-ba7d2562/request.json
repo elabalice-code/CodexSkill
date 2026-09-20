@@ -1,0 +1,14 @@
+﻿{
+    "run_id":  "20260908T112637231-ba7d2562",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Get-ScheduledTask | Where-Object {$_.TaskName -match \u0027Geekbench|Cinebench|DiskSpd|Speedometer|Benchmark\u0027} | Select-Object TaskName,TaskPath,State,@{N=\u0027UserId\u0027;E={$_.Principal.UserId}},@{N=\u0027LogonType\u0027;E={$_.Principal.LogonType}},@{N=\u0027RunLevel\u0027;E={$_.Principal.RunLevel}} | Format-List",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  5,
+    "max_retries":  3,
+    "started_at":  "2026-09-08T11:26:37.2410597+08:00"
+}

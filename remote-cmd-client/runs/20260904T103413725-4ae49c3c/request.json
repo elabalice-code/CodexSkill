@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T103413725-4ae49c3c",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "New-Item -ItemType Directory -Path \u0027C:\\Assets\\AssetValidation\\AssetValidation-20260904T103354\u0027 -ErrorAction Stop | Out-Null; [pscustomobject]@{RunId=\u0027AssetValidation-20260904T103354\u0027;CollectedAt=(Get-Date).ToString(\u0027o\u0027);ComputerName=4CE514B13K;OS=(Get-CimInstance Win32_OperatingSystem | Select-Object Caption,Version,BuildNumber,OSArchitecture);PowerScheme=(powercfg.exe /getactivescheme | Out-String).Trim();EdgePath=\u0027C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\u0027;EdgeVersion=(Get-Item -LiteralPath \u0027C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\u0027).VersionInfo.FileVersion;Assets=@(Get-ChildItem -LiteralPath \u0027C:\\Assets\u0027 -Force | Select-Object Name,Length,PSIsContainer);ResidualProcesses=@(Get-Process -Name \u0027geekbench*\u0027,\u0027Cinebench\u0027,\u0027diskspd\u0027 -ErrorAction SilentlyContinue | Select-Object ProcessName,Id)} | ConvertTo-Json -Depth 5 | Out-File -LiteralPath \u0027C:\\Assets\\AssetValidation\\AssetValidation-20260904T103354\\environment.json\u0027 -Encoding utf8; Get-Content -LiteralPath \u0027C:\\Assets\\AssetValidation\\AssetValidation-20260904T103354\\environment.json\u0027 -Raw",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "180",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T10:34:13.7406089+08:00"
+}

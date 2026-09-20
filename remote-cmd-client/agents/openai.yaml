@@ -1,0 +1,4 @@
+interface:
+  display_name: "Remote Cmd Client"
+  short_description: "Run bundled remote commands with auditable records"
+  default_prompt: "Use $remote-cmd-client to run these RemoteCmdClient arguments and save the result."

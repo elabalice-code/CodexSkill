@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260902T160040484-f0425e81",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "(Resolve-Path -Path \"C:\\windows\\TEMP\\CodexWindowsToolValidation_20260902_1540\").Path; Get-ChildItem -Path \"C:\\windows\\TEMP\\CodexWindowsToolValidation_20260902_1540\" -Force",
+                      "--no-filecmd",
+                      "--device",
+                      "Doll_FZJ",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-02T16:00:40.4951868+08:00"
+}

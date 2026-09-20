@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260907T155351822-1132e60c",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powershell -NoProfile -ExecutionPolicy Bypass -File C:\\Users\\Public\\Downloads\\Inspect-DiskSpd-TaskPrereqs-20260907T153340.ps1 -CandidateDiskSpdPath C:\\Users\\Public\\Downloads\\diskspd-v2.2-arm64-20260907T153340.exe -TaskName Codex-DiskSpd-20260907T155500-MiniPC",
+                      "--no-filecmd",
+                      "--device",
+                      "MiniPC",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-07T15:53:51.8349423+08:00"
+}

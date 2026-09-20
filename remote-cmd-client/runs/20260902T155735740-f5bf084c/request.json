@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260902T155735740-f5bf084c",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "upload",
+                      "D:\\Task_Panel\\6_6490_Dev\\17_Performance\\workspace\\remote_wpaexporter_test.ps1",
+                      "C:\\windows\\TEMP\\CodexWindowsToolValidation_20260902_1540\\wpaexporter_test.ps1",
+                      "--device",
+                      "Doll_FZJ",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-02T15:57:35.7528461+08:00"
+}

@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260915T100133123-f3e6b826",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "\u0026 C:\\Windows\\Sysnative\\pnputil.exe /add-driver C:\\WCH.CN\\WCHUSBNIC\\WCHUSBNIC.INF /install",
+                      "--no-filecmd",
+                      "--device",
+                      "HongheSleeper",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-15T10:01:33.1349938+08:00"
+}

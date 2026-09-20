@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T163349293-513155aa",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "upload",
+                      "D:\\Task_Panel\\6_6490_Dev\\Ex_Performances\\1_Grades\\1_Windows\\workspace\\1_Assets\\Launch-Speedometer3.1-Edge.cmd",
+                      "C:\\Assets\\Launch-Speedometer3.1-Edge.cmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T16:33:49.3040925+08:00"
+}

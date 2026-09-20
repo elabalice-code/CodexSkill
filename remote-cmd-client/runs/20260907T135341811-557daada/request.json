@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260907T135341811-557daada",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "download",
+                      "C:\\Assets\\Geekbench65-TZ-Frequency1s-20260907T1343\\thermal.txt",
+                      "D:\\Task_Panel\\6_6490_Dev\\Ex_Performances\\1_Grades\\1_Windows\\workspace\\1_AgentOutputs\\QCS6490_1-Geekbench65-Dense1s-20260907T1343-thermal.txt",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "300",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-07T13:53:41.8281750+08:00"
+}

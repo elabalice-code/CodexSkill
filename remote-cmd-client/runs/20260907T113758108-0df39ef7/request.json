@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260907T113758108-0df39ef7",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "$c=@(\u0027C:\\Assets\\Geekbench-6.5.0\\geekbench6.exe\u0027,\u0027C:\\Program Files\\Geekbench 6\\geekbench6.exe\u0027); [pscustomobject]@{Computer=$env:COMPUTERNAME;Paths=@($c|ForEach-Object{[pscustomobject]@{Path=$_;Exists=Test-Path -LiteralPath $_ -PathType Leaf}});Processes=@(Get-Process -Name geekbench6,geekbench_aarch64 -ErrorAction SilentlyContinue|Select-Object ProcessName,Id)}|ConvertTo-Json -Depth 4 -Compress",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-07T11:37:58.1209904+08:00"
+}

@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T152020916-175b9b7d",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "$ErrorActionPreference = \u0027Stop\u0027\n$taskName = \u0027Codex_Open_Speedometer31_20260904T1522\u0027\n$edge = \u0027C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\u0027\n$url = \u0027https://browserbench.org/Speedometer3.1/?startAutomatically=true\u0026iterationCount=1\u0027\n$user = \u0027DESKTOP-5OJC3K4\\Song\u0027\nif (-not (Test-Path -LiteralPath $edge -PathType Leaf)) { throw (\u0027Edge not found: \u0027 + $edge) }\n$activeUser = (Get-CimInstance -ClassName Win32_ComputerSystem).UserName\nif ($activeUser -ne $user) { throw (\u0027Interactive user mismatch: \u0027 + $activeUser) }\n$edgeVersion = (Get-Item -LiteralPath $edge).VersionInfo.ProductVersion\n$arguments = \u0027--new-window \u0027 + [char]34 + $url + [char]34\n$action = New-ScheduledTaskAction -Execute $edge -Argument $arguments\n$principal = New-ScheduledTaskPrincipal -UserId $user -LogonType Interactive -RunLevel Limited\n$settings = New-ScheduledTaskSettingsSet -ExecutionTimeLimit (New-TimeSpan -Minutes 5) -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries\ntry {\n Register-ScheduledTask -TaskName $taskName -Action $action -Principal $principal -Settings $settings -Force | Out-Null\n Start-ScheduledTask -TaskName $taskName\n Start-Sleep -Seconds 5\n $info = Get-ScheduledTaskInfo -TaskName $taskName\n [pscustomobject]@{OpenedUrl=$url;EdgeVersion=$edgeVersion;InteractiveUser=$user;LastRunTime=$info.LastRunTime;LastTaskResult=$info.LastTaskResult;TaskState=(Get-ScheduledTask -TaskName $taskName).State} | Format-List\n} finally {\n Unregister-ScheduledTask -TaskName $taskName -Confirm:$false -ErrorAction SilentlyContinue\n}",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T15:20:20.9302818+08:00"
+}

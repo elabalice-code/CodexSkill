@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260907T162813604-06df91b2",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "download",
+                      "C:\\Users\\Song\\Downloads\\SpeedometerRuns\\20260907T161242-QCS6490_1\\scheduled-task.json",
+                      "D:\\Task_Panel\\6_6490_Dev\\Ex_Performances\\1_Grades\\1_Windows\\workspace\\1_AgentOutputs\\Speedometer31_20260907T161242\\QCS6490_1\\scheduled-task.json",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-07T16:28:13.6058612+08:00"
+}

@@ -1,0 +1,16 @@
+﻿{
+    "run_id":  "20260917T202847591-27936396",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "sessions",
+                      "list",
+                      "--ip",
+                      "192.168.0.113",
+                      "--timeout",
+                      "5",
+                      "--json"
+                  ],
+    "argument_count":  7,
+    "max_retries":  0,
+    "started_at":  "2026-09-17T20:28:47.6074543+08:00"
+}

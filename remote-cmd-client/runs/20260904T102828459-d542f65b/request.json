@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T102828459-d542f65b",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Get-Item -LiteralPath \u0027C:\\Assets\\Cinebench2026_win_arm64.zip\u0027 | Select-Object FullName,Length,LastWriteTimeUtc | ConvertTo-Json -Compress",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T10:28:28.4712636+08:00"
+}

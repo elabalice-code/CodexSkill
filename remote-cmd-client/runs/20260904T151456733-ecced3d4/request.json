@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T151456733-ecced3d4",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "$ErrorActionPreference = \u0027Stop\u0027\n$taskName = \u0027Codex_Open_Cinebench2026_20260904T1515\u0027\n$target = \u0027C:\\Assets\\Cinebench2026\u0027\n$user = \u0027DESKTOP-5OJC3K4\\Song\u0027\nif (-not (Test-Path -LiteralPath $target -PathType Container)) { throw (\u0027Target directory not found: \u0027 + $target) }\n$action = New-ScheduledTaskAction -Execute \u0027C:\\Windows\\explorer.exe\u0027 -Argument $target\n$principal = New-ScheduledTaskPrincipal -UserId $user -LogonType Interactive -RunLevel Limited\n$settings = New-ScheduledTaskSettingsSet -ExecutionTimeLimit (New-TimeSpan -Minutes 5) -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries\ntry {\n Register-ScheduledTask -TaskName $taskName -Action $action -Principal $principal -Settings $settings -Force | Out-Null\n Start-ScheduledTask -TaskName $taskName\n Start-Sleep -Seconds 3\n $info = Get-ScheduledTaskInfo -TaskName $taskName\n [pscustomobject]@{OpenedPath=$target;InteractiveUser=$user;LastRunTime=$info.LastRunTime;LastTaskResult=$info.LastTaskResult;TaskState=(Get-ScheduledTask -TaskName $taskName).State} | Format-List\n} finally {\n Unregister-ScheduledTask -TaskName $taskName -Confirm:$false -ErrorAction SilentlyContinue\n}",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T15:14:56.7456190+08:00"
+}

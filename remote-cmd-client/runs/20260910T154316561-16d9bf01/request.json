@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260910T154316561-16d9bf01",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "upload",
+                      "C:\\Users\\PC\\Desktop\\Home\\Research\\Qwen3.8-27B_4090D_48GB_提速调查.md",
+                      "C:\\Users\\Administrator\\Desktop\\00_STATUS\\Qwen3.8-27B_4090D_48GB_提速调查.md",
+                      "--device",
+                      "Nene",
+                      "--timeout",
+                      "300",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-10T15:43:16.5736642+08:00"
+}

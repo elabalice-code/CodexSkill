@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T102522400-ce9b0a5f",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "curl.exe -L --fail --retry 3 --retry-delay 2 --continue-at - --output C:\\Assets\\Cinebench2026_win_arm64.zip https://mx-app-blob-prod.maxon.net/mx-package-production/website/windows/maxon/cinebench/Cinebench2026_win_arm64.zip",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "3600",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T10:25:22.4133252+08:00"
+}

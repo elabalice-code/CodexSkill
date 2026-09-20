@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T171917983-38b1ba8e",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Start-Process -FilePath cmd.exe -ArgumentList \u0027/c C:\\Assets\\Start-Kenai-Geekbench6-CpuFive.cmd\u0027; \u0027KENAI_WRAPPER_STARTED\u0027",
+                      "--no-filecmd",
+                      "--device",
+                      "Kenai8270_1",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T17:19:17.9933787+08:00"
+}

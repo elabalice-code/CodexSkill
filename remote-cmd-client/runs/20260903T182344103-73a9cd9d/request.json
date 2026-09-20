@@ -1,0 +1,16 @@
+﻿{
+    "run_id":  "20260903T182344103-73a9cd9d",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Write-Output (\"Caption=\" + (Get-CimInstance Win32_OperatingSystem).Caption); Write-Output (\"Version=\" + (Get-CimInstance Win32_OperatingSystem).Version); Write-Output (\"Build=\" + (Get-CimInstance Win32_OperatingSystem).BuildNumber); Write-Output (\"Architecture=\" + (Get-CimInstance Win32_OperatingSystem).OSArchitecture); Write-Output (\"PowerShell=\" + $PSVersionTable.PSVersion.ToString()); Write-Output (\"User=\" + (whoami))",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  7,
+    "max_retries":  3,
+    "started_at":  "2026-09-03T18:23:44.1157751+08:00"
+}

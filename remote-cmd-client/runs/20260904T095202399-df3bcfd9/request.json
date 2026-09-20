@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T095202399-df3bcfd9",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Get-ChildItem -LiteralPath \u0027C:\\Assets\u0027 -Force | Select-Object Name,Length,PSIsContainer,LastWriteTimeUtc | ConvertTo-Json -Compress",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T09:52:02.4124093+08:00"
+}

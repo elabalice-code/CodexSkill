@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260915T100115117-eb421d47",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "hostname",
+                      "--no-filecmd",
+                      "--device",
+                      "HongheSleeper",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-15T10:01:15.1280902+08:00"
+}

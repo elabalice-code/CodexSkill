@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T095231672-9d91c30c",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "curl.exe -L --fail --retry 3 --retry-delay 2 --continue-at - --output C:\\Assets\\Geekbench-6.5.0-WindowsSetup.exe https://cdn.geekbench.com/Geekbench-6.5.0-WindowsSetup.exe",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "1800",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T09:52:31.6833483+08:00"
+}

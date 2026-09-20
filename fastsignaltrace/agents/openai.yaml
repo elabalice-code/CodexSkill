@@ -1,0 +1,7 @@
+interface:
+  display_name: "FastSignalTrace"
+  short_description: "Trace signals, audit consumption, and update cockpit"
+  default_prompt: "Use $fastsignaltrace to generate equations, run EqualAnalyzer PATH analysis, audit boolean consumption and double buffering, and update 00_STATUS/Extra_SignalMap.md."
+
+policy:
+  allow_implicit_invocation: true

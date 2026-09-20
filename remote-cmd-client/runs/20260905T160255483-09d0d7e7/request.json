@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T160255483-09d0d7e7",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "\u0026 \u0027C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\u0027 \u0027https://browserbench.org/Speedometer3.1/?startAutomatically=true\u0026iterationCount=1\u0027",
+                      "--no-filecmd",
+                      "--device",
+                      "Kenai8270_1",
+                      "--timeout",
+                      "60",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T16:02:55.4956976+08:00"
+}

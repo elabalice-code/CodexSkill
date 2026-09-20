@@ -1,0 +1,52 @@
+{
+  "Value": "root",
+  "Task_Unit": {
+    "TaskName": "root",
+    "Executor": "",
+    "WorkTime": 0,
+    "StartRestrict": 0,
+    "EndRestrict": 0,
+    "Inputs": [],
+    "Outputs": [],
+    "ReferenceExePath": "",
+    "Progress": 0,
+    "ProgressedWorkTime": 0,
+    "Status": 0
+  },
+  "Children": [
+    {
+      "Value": "prepare",
+      "Task_Unit": {
+        "TaskName": "prepare",
+        "Executor": "operator-a",
+        "WorkTime": 2,
+        "StartRestrict": 8,
+        "EndRestrict": 12,
+        "Inputs": [],
+        "Outputs": ["review"],
+        "ReferenceExePath": "",
+        "Progress": 0,
+        "ProgressedWorkTime": 0,
+        "Status": 0
+      },
+      "Children": []
+    },
+    {
+      "Value": "review",
+      "Task_Unit": {
+        "TaskName": "review",
+        "Executor": "operator-b",
+        "WorkTime": 1,
+        "StartRestrict": 13,
+        "EndRestrict": 18,
+        "Inputs": ["prepare"],
+        "Outputs": [],
+        "ReferenceExePath": "",
+        "Progress": 0,
+        "ProgressedWorkTime": 0,
+        "Status": 0
+      },
+      "Children": []
+    }
+  ]
+}

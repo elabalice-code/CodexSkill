@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260903T194754376-cae1b8ce",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powershell -NoProfile -ExecutionPolicy Bypass -Command \"@(\u0027C:\\Users\\Song\\Downloads\\RemoteSupport\\WindowsBenchWorkplace\\automation-test\\modules\\ResultModel.psm1\u0027,\u0027C:\\Users\\Song\\Downloads\\RemoteSupport\\WindowsBenchWorkplace\\automation-test\\modules\\ReportBuilder.psm1\u0027,\u0027C:\\Users\\Song\\Downloads\\RemoteSupport\\WindowsBenchWorkplace\\automation-test\\spec\\scenario-plan.json\u0027,\u0027C:\\Users\\Song\\Downloads\\RemoteSupport\\WindowsBenchWorkplace\\automation-test\\spec\\report-layout.json\u0027,\u0027C:\\Users\\Song\\Downloads\\RemoteSupport\\WindowsBenchWorkplace\\automation-test\\tests\\fixtures\\report-golden-expectations.json\u0027,\u0027C:\\Users\\Song\\Downloads\\RemoteSupport\\WindowsBenchWorkplace\\automation-test\\tests\\Test-ScenarioReportGolden.ps1\u0027) | ForEach-Object { [pscustomobject]@{ path = $_; exists = (Test-Path -LiteralPath $_ -PathType Leaf) } } | ConvertTo-Json -Compress\"",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "120",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-03T19:47:54.3889358+08:00"
+}

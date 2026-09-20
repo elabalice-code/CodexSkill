@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T161250440-927e3a7b",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "$ErrorActionPreference = \u0027Stop\u0027\n$taskName = \u0027Codex_Install_Cinebench_Cert_20260904T1612\u0027\n$scriptPath = \u0027C:\\Assets\\AssetValidation\\AssetValidation-20260904T103354\\Install-CinebenchDigiCertIntermediate-20260904T1610.ps1\u0027\n$certificatePath = \u0027C:\\Assets\\AssetValidation\\AssetValidation-20260904T103354\\DigiCert-Trusted-G4-CodeSigning-2021-CA1-7B0F360B.cer\u0027\n$outputPath = \u0027C:\\Assets\\AssetValidation\\AssetValidation-20260904T103354\\cinebench-song-cert-install-20260904T1612.json\u0027\n$user = \u0027DESKTOP-5OJC3K4\\Song\u0027\nif (Test-Path -LiteralPath $outputPath) { throw (\u0027Refusing to overwrite: \u0027 + $outputPath) }\n$quote = [char]34\n$arguments = \u0027-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File \u0027 + $quote + $scriptPath + $quote + \u0027 -CertificatePath \u0027 + $quote + $certificatePath + $quote + \u0027 -OutputPath \u0027 + $quote + $outputPath + $quote\n$action = New-ScheduledTaskAction -Execute \u0027C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\u0027 -Argument $arguments\n$principal = New-ScheduledTaskPrincipal -UserId $user -LogonType Interactive -RunLevel Limited\n$settings = New-ScheduledTaskSettingsSet -ExecutionTimeLimit (New-TimeSpan -Minutes 3) -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries\ntry {\n Register-ScheduledTask -TaskName $taskName -Action $action -Principal $principal -Settings $settings -Force | Out-Null\n Start-ScheduledTask -TaskName $taskName\n $deadline = (Get-Date).AddSeconds(120)\n while ((Get-Date) -lt $deadline -and -not (Test-Path -LiteralPath $outputPath -PathType Leaf)) { Start-Sleep -Seconds 1 }\n if (-not (Test-Path -LiteralPath $outputPath -PathType Leaf)) {\n  $info = Get-ScheduledTaskInfo -TaskName $taskName\n  throw (\u0027Install output was not created. LastTaskResult=\u0027 + $info.LastTaskResult)\n }\n Start-Sleep -Seconds 2\n $result = Get-Content -LiteralPath $outputPath -Raw -Encoding UTF8 | ConvertFrom-Json\n [pscustomobject]@{Identity=$result.Identity;SessionId=$result.SessionId;CertificateStore=$result.CertificateStore;PresentBefore=$result.PresentBefore;Action=$result.Action;PresentAfter=$result.PresentAfter;AllSignaturesValid=$result.AllSignaturesValid;CertificateThumbprint=$result.CertificateThumbprint} | Format-List\n $result.SignatureResults | Select-Object Path,SignatureStatus,SignatureMessage,ChainOk | Format-List\n if (-not $result.AllSignaturesValid) { throw \u0027One or more Cinebench signatures remain invalid after certificate installation.\u0027 }\n} finally {\n Unregister-ScheduledTask -TaskName $taskName -Confirm:$false -ErrorAction SilentlyContinue\n}",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "180",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T16:12:50.4547694+08:00"
+}

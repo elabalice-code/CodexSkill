@@ -1,0 +1,15 @@
+﻿{
+    "run_id":  "20260901T172412811-6c6f993d",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "cmd /c echo %TEMP%",
+                      "--device",
+                      "Samt_20260828_2220",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  7,
+    "started_at":  "2026-09-01T17:24:12.8242561+08:00"
+}

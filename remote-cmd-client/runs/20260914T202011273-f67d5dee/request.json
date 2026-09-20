@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260914T202011273-f67d5dee",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Get-PSDrive -PSProvider FileSystem",
+                      "--no-filecmd",
+                      "--device",
+                      "HongheSleeper",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-14T20:20:11.2841587+08:00"
+}

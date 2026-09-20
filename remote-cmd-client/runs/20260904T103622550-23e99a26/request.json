@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260904T103622550-23e99a26",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "\u0026 \u0027C:\\Assets\\Geekbench-6.5.0\\geekbench6.exe\u0027 --cpu 2\u003e\u00261 | Tee-Object -FilePath \u0027C:\\Assets\\AssetValidation\\AssetValidation-20260904T103354\\geekbench-stdout.txt\u0027; $code=$LASTEXITCODE; [pscustomobject]@{GeekbenchExitCode=$code} | ConvertTo-Json -Compress; exit $code",
+                      "--no-filecmd",
+                      "--device",
+                      "QCS6490_1",
+                      "--timeout",
+                      "1800",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-04T10:36:22.5630831+08:00"
+}

@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260905T160137790-a7728c34",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "Get-CimInstance Win32_Process | Where-Object { $_.Name -eq \u0027msedge.exe\u0027 } | ForEach-Object { [Console]::WriteLine(($_.ProcessId.ToString()+\u0027|\u0027+$_.CommandLine)) }",
+                      "--no-filecmd",
+                      "--device",
+                      "Kenai8270_1",
+                      "--timeout",
+                      "30",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-05T16:01:37.8024016+08:00"
+}

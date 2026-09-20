@@ -1,0 +1,17 @@
+﻿{
+    "run_id":  "20260907T162355381-c4d32b52",
+    "executable_path":  "C:\\Users\\PC\\.codex\\skills\\remote-cmd-client\\bin\\RemoteCmdClient.exe",
+    "arguments":  [
+                      "send",
+                      "powershell -NoProfile -ExecutionPolicy Bypass -File C:\\Users\\Public\\Downloads\\Invoke-Speedometer31-OneTimeUserTask-20260907T161242.ps1 -RunTag 20260907T161242-MiniPC -EdgePath C:\\Progra~2\\Microsoft\\Edge\\Application\\msedge.exe -WorkerPath C:\\Users\\Public\\Downloads\\Run-Speedometer31-InteractiveWorker-20260907T161242.ps1 -Port 9341 -TimeoutSeconds 900",
+                      "--no-filecmd",
+                      "--device",
+                      "MiniPC",
+                      "--timeout",
+                      "1100",
+                      "--json"
+                  ],
+    "argument_count":  8,
+    "max_retries":  3,
+    "started_at":  "2026-09-07T16:23:55.3957053+08:00"
+}
