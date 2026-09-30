@@ -5,7 +5,7 @@ param(
     [string]$VariablesOutput,
     [string[]]$Exclude,
     [switch]$Detailed,
-    [ValidateSet("Auto", "CSharp", "Godot", "RustTauri", "Uefi")]
+    [ValidateSet("Auto", "CSharp", "Godot", "RustTauri", "Uefi", "Lacpp")]
     [string]$Language = "Auto"
 )
 
@@ -22,7 +22,7 @@ foreach ($name in @(".git", ".vs", ".godot", "bin", "obj", "node_modules", "targ
 }
 foreach ($name in @($Exclude)) { if ($name) { [void]$excludedNames.Add($name) } }
 
-$counts = @{ CSharp = 0; Godot = 0; Rust = 0; TypeScript = 0; C = 0; Header = 0; UefiMeta = 0 }
+$counts = @{ CSharp = 0; Godot = 0; Rust = 0; TypeScript = 0; C = 0; Cpp = 0; Header = 0; UefiMeta = 0 }
 $markers = @{ CSharp = $false; Godot = $false; Cargo = $false; Package = $false; Tauri = $false; Uefi = $false }
 $directories = [Collections.Generic.Stack[string]]::new()
 $directories.Push($root)
@@ -48,6 +48,12 @@ while ($directories.Count -gt 0) {
                 ".ts" { $counts.TypeScript++ }
                 ".tsx" { $counts.TypeScript++ }
                 ".c" { $counts.C++ }
+                ".cc" { $counts.Cpp++ }
+                ".cpp" { $counts.Cpp++ }
+                ".cxx" { $counts.Cpp++ }
+                ".hpp" { $counts.Header++ }
+                ".hxx" { $counts.Header++ }
+                ".hh" { $counts.Header++ }
                 ".h" { $counts.Header++ }
                 ".dsc" { $counts.UefiMeta++; $markers.Uefi = $true }
                 ".dec" { $counts.UefiMeta++; $markers.Uefi = $true }
@@ -67,7 +73,7 @@ while ($directories.Count -gt 0) {
     catch [IO.IOException] { continue }
 }
 
-[Console]::Error.WriteLine(("DetectedFiles: CSharp={0}, GDScript={1}, Rust={2}, TypeScript={3}, C={4}, Header={5}, UefiMeta={6}" -f $counts.CSharp, $counts.Godot, $counts.Rust, $counts.TypeScript, $counts.C, $counts.Header, $counts.UefiMeta))
+[Console]::Error.WriteLine(("DetectedFiles: CSharp={0}, GDScript={1}, Rust={2}, TypeScript={3}, C={4}, Header={5}, UefiMeta={6}, Cpp={7}" -f $counts.CSharp, $counts.Godot, $counts.Rust, $counts.TypeScript, $counts.C, $counts.Header, $counts.UefiMeta, $counts.Cpp))
 
 $selected = $Language
 if ($selected -eq "Auto") {
@@ -87,10 +93,11 @@ if ($selected -eq "Auto") {
     }
     elseif ($markers.Godot) { $selected = "Godot" }
     elseif ($hasRustProject) { $selected = "RustTauri" }
-    elseif ($markers.CSharp) { $selected = "CSharp" }
+    elseif ($markers.CSharp -and $counts.CSharp -gt 0) { $selected = "CSharp" }
     else {
         $scores = @{
             CSharp = $(if ($counts.CSharp -gt 0) { 1 } else { 0 })
+            Lacpp = $(if (($counts.C + $counts.Cpp + $counts.Header) -gt 0) { 1 } else { 0 })
             Godot = $(if ($counts.Godot -gt 0) { 1 } else { 0 })
             RustTauri = $(if (($counts.Rust + $counts.TypeScript) -gt 0) { 1 } else { 0 }) + $(if ($markers.Package) { 1 } else { 0 })
         }
@@ -102,7 +109,7 @@ if ($selected -eq "Auto") {
         $highest = ($supported | Measure-Object -Property Value -Maximum).Maximum
         $winners = @($supported | Where-Object Value -eq $highest)
         if ($winners.Count -ne 1) {
-            [Console]::Error.WriteLine(("Ambiguous source root. Scores: CSharp={0}, Godot={1}, RustTauri={2}. Narrow the root or set -Language explicitly." -f $scores.CSharp, $scores.Godot, $scores.RustTauri))
+            [Console]::Error.WriteLine(("Ambiguous source root. Scores: CSharp={0}, Godot={1}, RustTauri={2}, Lacpp={3}. Narrow the root or set -Language explicitly." -f $scores.CSharp, $scores.Godot, $scores.RustTauri, $scores.Lacpp))
             exit 5
         }
         $selected = $winners[0].Key
@@ -112,7 +119,8 @@ if ($selected -eq "Auto") {
 if (($selected -eq "CSharp" -and $counts.CSharp -eq 0) -or
     ($selected -eq "Godot" -and $counts.Godot -eq 0) -or
     ($selected -eq "RustTauri" -and ($counts.Rust + $counts.TypeScript) -eq 0) -or
-    ($selected -eq "Uefi" -and ($counts.C + $counts.Header) -eq 0)) {
+    ($selected -eq "Uefi" -and ($counts.C + $counts.Header) -eq 0) -or
+    ($selected -eq "Lacpp" -and ($counts.C + $counts.Cpp + $counts.Header) -eq 0)) {
     [Console]::Error.WriteLine("Selected language $selected has no matching source files in $root")
     exit 3
 }
@@ -124,6 +132,7 @@ $childName = switch ($selected) {
     "Godot" { "fastsignaltrace-godot" }
     "RustTauri" { "fastsignaltrace-rusttauri" }
     "Uefi" { "fastsignaltrace-uefi" }
+    "Lacpp" { "fastsignaltrace-lacpp" }
 }
 $childScript = Join-Path $skillsRoot "$childName\scripts\invoke.ps1"
 if (-not (Test-Path -LiteralPath $childScript -PathType Leaf)) {

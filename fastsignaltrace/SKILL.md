@@ -1,6 +1,6 @@
 ---
 name: fastsignaltrace
-description: FastSignalTrace 系列的唯一顶层入口。自动盘点源码扩展名和工程标记，选择 C#、Godot/GDScript、Rust+Tauri 或 C-UEFI 子 skill，扫描语言状态与专用承担者的生产者消费者角色并生成标准信号方程；扫描完成后必须调用 EqualAnalyzer 展开完整 PATH，按终端层、信号汇集层和信号编织层检查架构与命名，并将信号地图写入 00_STATUS/Extra_SignalMap.md。适用于用户要求分析源码信号地图、生产消费关系、变量读写、UEFI Protocol/PPI/PCD/HOB/Event 或调用 FastSignalTrace，但没有明确指定语言版本的场景；遇到真正的多语言范围歧义时停止并要求缩小根目录，不静默混扫。
+description: FastSignalTrace 系列的唯一顶层入口。自动盘点源码扩展名和工程标记，选择 C#、Godot/GDScript、Rust+Tauri 、普通 C/C++ 或 C-UEFI 子 skill，扫描语言状态与专用承担者的生产者消费者角色并生成标准信号方程；扫描完成后必须调用 EqualAnalyzer 展开完整 PATH，按终端层、信号汇集层和信号编织层检查架构与命名，并将信号地图写入 00_STATUS/Extra_SignalMap.md。适用于用户要求分析源码信号地图、生产消费关系、变量读写、UEFI Protocol/PPI/PCD/HOB/Event 或调用 FastSignalTrace，但没有明确指定语言版本的场景；遇到真正的多语言范围歧义时停止并要求缩小根目录，不静默混扫。
 ---
 
 # FastSignalTrace
@@ -11,6 +11,7 @@ description: FastSignalTrace 系列的唯一顶层入口。自动盘点源码扩
 - Godot/GDScript：`fastsignaltrace-godot`
 - Rust、TypeScript/TSX、Tauri：`fastsignaltrace-rusttauri`
 - EDK2/PI/UEFI C：`fastsignaltrace-uefi`
+- Linux/Android（LA）及普通 C/C++：`fastsignaltrace-lacpp`，包含结构体函数指针和完整信号消费链；可用 `-Language Lacpp` 显式选择。调用者/被调用者查询另用 `source-insight-cli`。
 
 ## 标准流程
 
@@ -91,7 +92,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File "<skill>/scripts/audit-s
 - UEFI 固件树内常包含辅助 C#、Rust 或第三方源码；明确的 UEFI 元数据拥有工程根路由优先权。若同时发现 Godot 或 Tauri 强标记，仍按歧义处理。
 - 如果只有一种受支持源码扩展名，直接选择对应子 skill。
 - `project.godot` 对常见的 Godot+C# 混合工程拥有 Godot 路由优先权。Godot 与 Cargo/Tauri 同时出现，或独立 C# 与 Cargo/Tauri 同时出现时返回退出码 5；没有强标记时再按源码扩展名评分。歧义时不调用任何分析器。
-- 完全没有 `.cs/.gd/.rs/.ts/.tsx` 且没有可确认的 C-UEFI 源码时返回退出码 3。
+- 普通 `.c/.h/.cc/.cpp/.cxx/.hh/.hpp/.hxx` 路由为 Lacpp；明确 UEFI 元数据继续优先选择 Uefi。没有任何支持源码时返回退出码 3。
 
 ## 退出码
 

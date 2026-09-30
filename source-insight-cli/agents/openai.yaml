@@ -1,0 +1,4 @@
+interface:
+  display_name: "SourceInsightCli"
+  short_description: "Expand full C/C++ call chains and struct callbacks"
+  default_prompt: "Use $source-insight-cli to expand complete left-to-right C/C++ calling chains, resolve struct function-pointer candidates, and save the full raw output."
