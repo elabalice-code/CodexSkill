@@ -47,6 +47,12 @@ if ($index + 1 -lt $AdbArguments.Count) {
 }
 
 switch ($command) {
+    'pull' {
+        if ($tail.Count -ne 2 -or $tail[0] -match '\.\.' -or
+            $tail[0] -notmatch '^(/vendor/etc/sensors/config(/[A-Za-z0-9_.-]+)?|/mnt/vendor/persist/sensors/registry(/[A-Za-z0-9_./-]+)?|/data/local/tmp/sensor_aba_[A-Za-z0-9_./-]+)$') {
+            Deny 'pull permits only sensor configuration backups and sensor ABA evidence, with an explicit local destination'
+        }
+    }
     'devices' {
         if ($tail.Count -gt 1 -or ($tail.Count -eq 1 -and $tail[0] -ne '-l')) {
             Deny 'devices permits only the optional -l flag'
@@ -74,6 +80,29 @@ switch ($command) {
         }
 
         switch ($shellCommand) {
+            'date' {
+                if ($shellTail.Count -ne 1 -or $shellTail[0] -ne '-u') {
+                    Deny 'date permits only UTC clock reading with -u'
+                }
+            }
+            'lshal' {
+                if ($shellTail.Count -ne 0) {
+                    Deny 'lshal permits only the default HAL service listing'
+                }
+            }
+            'sha256sum' {
+                if ($shellTail.Count -eq 0) { Deny 'sha256sum requires explicit diagnostic artifact paths' }
+                foreach ($path in $shellTail) {
+                    if ($path -notmatch '^(/vendor/lib64/(sensors\.ssc\.so|hw/(sensors\.ssc\.so|camera\.qcom\.so|com\.qti\.chi\.override\.so)|camera/components/com\.qti\.node\.eisv[23]\.so|libssc\.so|libcamx[a-zA-Z0-9_.-]*\.so)|/vendor/bin/hw/android\.hardware\.sensors@2\.0-service\.multihal|/vendor/app/QSensorTest/QSensorTest\.apk|/product/app/Camera2/Camera2\.apk)$') {
+                        Deny "sha256sum path is outside the sensor/camera artifact boundary: $path"
+                    }
+                }
+            }
+            'pm' {
+                if (($shellTail -join ' ') -notmatch '^(list packages( -f)?( [A-Za-z0-9_.]+)?|path [A-Za-z0-9_.]+)$') {
+                    Deny 'pm permits only package listing and APK path queries'
+                }
+            }
             'getprop' {
                 if ($shellTail.Count -gt 1 -or ($shellTail.Count -eq 1 -and $shellTail[0] -notmatch '^[A-Za-z0-9._-]+$')) {
                     Deny 'getprop permits zero arguments or one property name'
@@ -88,11 +117,17 @@ switch ($command) {
             }
             'cat' {
                 if ($shellTail.Count -eq 0) {
-                    Deny 'cat requires at least one /proc or /sys path'
+                    Deny 'cat requires at least one allowlisted diagnostic path'
                 }
                 foreach ($path in $shellTail) {
-                    if ($path -match '\.\.' -or $path -notmatch '^/(proc|sys)/[A-Za-z0-9_./*:-]+$') {
-                        Deny "cat path is outside the read-only /proc and /sys boundary: $path"
+                    $isKernelDiagnostic = $path -match '^/(proc|sys)/[A-Za-z0-9_./*:-]+$'
+                    $isSensorConfig = $path -match '^/vendor/etc/sensors/(config/[A-Za-z0-9_-]+\.json|sns_reg_config|hals\.conf)$'
+                    $isSensorRegistry = $path -match '^/mnt/vendor/persist/sensors/registry/(sns_reg_config|sns_reg_version|registry/[A-Za-z0-9_.-]+)$'
+                    $isSensorInit = $path -match '^/vendor/etc/(init/(init\.vendor\.sensors|vendor\.sensors\.qti|vendor\.sensors\.sscrpcd|android\.hardware\.sensors@2\.0-service-multihal)\.rc|sensors/sensors_config)$'
+                    $isAbaEvidence = $path -match '^/data/local/tmp/sensor_aba_[A-Za-z0-9_-]+\.xml$'
+                    $isSensorManifest = $path -eq '/vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal.xml'
+                    if ($path -match '\.\.' -or -not ($isKernelDiagnostic -or $isSensorConfig -or $isSensorRegistry -or $isSensorInit -or $isAbaEvidence -or $isSensorManifest)) {
+                        Deny "cat path is outside the read-only diagnostic boundary: $path"
                     }
                 }
             }
@@ -105,6 +140,14 @@ switch ($command) {
                     if ($shellTail.Count -ne 1) {
                         Deny "dumpsys $service permits no service arguments"
                     }
+                } elseif ($service -eq 'sensorservice' -and $shellTail.Count -eq 1) {
+                    # Read-only sensor state snapshot.
+                } elseif ($service -eq 'package' -and $shellTail.Count -eq 2 -and $shellTail[1] -match '^[A-Za-z0-9_.]+$') {
+                    # Read-only package metadata.
+                } elseif ($service -in @('display', 'power', 'input', 'media.camera', 'sensor_privacy') -and $shellTail.Count -eq 1) {
+                    # Default state dumps only; no service control arguments.
+                } elseif ($service -eq 'window' -and $shellTail.Count -eq 2 -and $shellTail[1] -in @('displays', 'policy')) {
+                    # Bounded window/display policy state, without settings mutations.
                 } elseif ($service -notin @('cpuinfo', 'meminfo', 'gfxinfo', 'thermalservice', 'diskstats')) {
                     Deny "dumpsys service is not allowlisted: $service"
                 }
@@ -137,8 +180,9 @@ switch ($command) {
                 }
             }
             'settings' {
-                if (($shellTail -join ' ') -notmatch '^get global captive_portal_(http_url|https_url|fallback_url|other_fallback_urls|fallback_probe_specs|use_https|mode)$') {
-                    Deny 'settings permits only reads of captive portal probe configuration'
+                if (($shellTail -join ' ') -notmatch '^get global captive_portal_(http_url|https_url|fallback_url|other_fallback_urls|fallback_probe_specs|use_https|mode)$' -and
+                    ($shellTail -join ' ') -notmatch '^--user current get system (screen_brightness_mode|screen_brightness|screen_auto_brightness_adj|screen_off_timeout)$') {
+                    Deny 'settings permits only reads of captive portal configuration and selected current-user brightness settings'
                 }
             }
             'timeout' {
@@ -159,7 +203,7 @@ switch ($command) {
                 }
             }
             'logcat' {
-                if ($shellTail -contains '-c' -or $shellTail -contains '--clear' -or $shellTail -contains '-G' -or $shellTail -contains '--buffer-size') {
+                if ($shellTail -contains '-c' -or $shellTail -contains '--clear' -or $shellTail -ccontains '-G' -or $shellTail -contains '--buffer-size') {
                     Deny 'logcat mutation option is not permitted'
                 }
                 foreach ($argument in $shellTail) {
