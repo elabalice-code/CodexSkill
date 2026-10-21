@@ -13,12 +13,12 @@ Use the bundled executable at `bin/RemoteCmdClient.exe`; never depend on a copy 
 - Preserve the supplied arguments exactly: do not add, remove, reorder, or reinterpret them.
 - If the user asks for a state-changing remote operation but omits a material target such as a remote path, local destination, or device, obtain that information rather than guessing. Do not add `--overwrite` unless the user specifically authorizes replacement.
 
-## Retry
+## Execution and Retry
 
+- If a target command or script is running, do not submit a duplicate command until it finishes. If the client returns or times out while the target's execution status is unknown, check whether the target is still running before submitting it again.
+- Once the target finishes, continue any further diagnostics, fixes, and tests within the user's authorized task as needed.
 - The wrapper automatically retries a known pre-execution transport failure up to three times after the initial attempt. Every retry uses the exact same RemoteCmdClient arguments and device.
-- Retry only when the audit output explicitly says the remote command did not begin, such as `Execution failed before the command completed` or `Remote command file is not ready`.
-- Do not automatically retry a remote command that started, completed with a non-zero exit code, timed out after execution began, or has an ambiguous outcome. Repeating such a command could duplicate a state change.
-- `-MaxRetries` controls the wrapper retry limit from 0 through 3 and defaults to 3. Do not issue additional manual retries after the wrapper stops unless the user explicitly asks.
+- `-MaxRetries` controls the wrapper retry limit from 0 through 3 and defaults to 3.
 
 ## Records
 
