@@ -1,0 +1,3 @@
+interface:
+  display_name: "FastCompare"
+  short_description: "Compare text files and directory trees on Windows"
